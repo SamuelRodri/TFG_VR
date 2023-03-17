@@ -104,9 +104,9 @@ public class Vertebra : MonoBehaviour
 
     private void Update()
     {
-        if (GetComponent<newXROffsetGrabInteractable>().isGrabbed)
+        if (GetComponent<XROffsetGrabInteractable>().isGrabbed)
         {
-            var rot = GetComponent<newXROffsetGrabInteractable>().interactor.transform.rotation * GetComponent<newXROffsetGrabInteractable>().offset;
+            var rot = GetComponent<XROffsetGrabInteractable>().interactor.transform.rotation * GetComponent<XROffsetGrabInteractable>().offset;
             rotation = rot;
         }
 

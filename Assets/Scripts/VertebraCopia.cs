@@ -102,18 +102,18 @@ public class VertebraCopia : MonoBehaviour
 
     private void Update()
     {
-        if (GetComponent<newXROffsetGrabInteractable>().isGrabbed)
+        if (GetComponent<XROffsetGrabInteractable>().isGrabbed)
         {
-            var rot = GetComponent<newXROffsetGrabInteractable>().interactor.transform.rotation * GetComponent<newXROffsetGrabInteractable>().offset;
+            var rot = GetComponent<XROffsetGrabInteractable>().interactor.transform.rotation * GetComponent<XROffsetGrabInteractable>().offset;
             rotation = rot.eulerAngles;
         }
 
         if (gameObject.name.Equals("T1")) // Pruebas con cubo
         {
-            //rotation = CheckHardLimits(GetComponent<newXROffsetGrabInteractable>().interactor.transform.rotation * GetComponent<newXROffsetGrabInteractable>().offset).eulerAngles;
-            //initialCubeUp = GetComponent<newXROffsetGrabInteractable>().interactor.transform.up;
-            //initialCubeRight = GetComponent<newXROffsetGrabInteractable>().interactor.transform.right;
-            //initialCubeForward = GetComponent<newXROffsetGrabInteractable>().interactor.transform.forward;
+            //rotation = CheckHardLimits(GetComponent<XROffsetGrabInteractable>().interactor.transform.rotation * GetComponent<XROffsetGrabInteractable>().offset).eulerAngles;
+            //initialCubeUp = GetComponent<XROffsetGrabInteractable>().interactor.transform.up;
+            //initialCubeRight = GetComponent<XROffsetGrabInteractable>().interactor.transform.right;
+            //initialCubeForward = GetComponent<XROffsetGrabInteractable>().interactor.transform.forward;
             //position = cube.position + cubePosOffset;
             rotation = (cube.rotation * cubeOffset).eulerAngles;
             initialCubeRotation = cube.rotation;
@@ -233,18 +233,18 @@ public class VertebraCopia : MonoBehaviour
         var angleYNext = Vector3.SignedAngle(transform.up, nextVert.transform.up, Vector3.up);
         var angleZNext = Vector3.SignedAngle(transform.forward, nextVert.transform.forward, Vector3.forward);
 
-        Vector3 crossProductZ = Vector3.Cross(initialCubeUp, GetComponent<newXROffsetGrabInteractable>().interactor.transform.up);
-        float dotProductZ = Vector3.Dot(crossProductZ, GetComponent<newXROffsetGrabInteractable>().interactor.transform.forward);
+        Vector3 crossProductZ = Vector3.Cross(initialCubeUp, GetComponent<XROffsetGrabInteractable>().interactor.transform.up);
+        float dotProductZ = Vector3.Dot(crossProductZ, GetComponent<XROffsetGrabInteractable>().interactor.transform.forward);
 
-        Vector3 crossProductY = Vector3.Cross(initialCubeRight, GetComponent<newXROffsetGrabInteractable>().interactor.transform.right);
-        float dotProductY = Vector3.Dot(crossProductY, GetComponent<newXROffsetGrabInteractable>().interactor.transform.up);
+        Vector3 crossProductY = Vector3.Cross(initialCubeRight, GetComponent<XROffsetGrabInteractable>().interactor.transform.right);
+        float dotProductY = Vector3.Dot(crossProductY, GetComponent<XROffsetGrabInteractable>().interactor.transform.up);
 
-        Vector3 crossProductX = Vector3.Cross(initialCubeForward, GetComponent<newXROffsetGrabInteractable>().interactor.transform.forward);
-        float dotProductX = Vector3.Dot(crossProductX, GetComponent<newXROffsetGrabInteractable>().interactor.transform.right);
+        Vector3 crossProductX = Vector3.Cross(initialCubeForward, GetComponent<XROffsetGrabInteractable>().interactor.transform.forward);
+        float dotProductX = Vector3.Dot(crossProductX, GetComponent<XROffsetGrabInteractable>().interactor.transform.right);
 
         if (Mathf.Abs(angleXNext) > 3 || Mathf.Abs(angleYNext) > 2 || Mathf.Abs(angleZNext) > 2)
         {
-            cubeOffset = Quaternion.Inverse(GetComponent<newXROffsetGrabInteractable>().interactor.transform.rotation) * transform.rotation;
+            cubeOffset = Quaternion.Inverse(GetComponent<XROffsetGrabInteractable>().interactor.transform.rotation) * transform.rotation;
 
             if (angleXNext < 0 && dotProductX > 0 || angleXNext > 0 && dotProductX < 0 ||
                 angleYNext < 0 && dotProductY > 0 || angleYNext > 0 && dotProductY < 0 ||
