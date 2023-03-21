@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using TFG.Behaviour;
 using UnityEngine;
 
 // Clase que representa una unica vertebra
 public class Vertebra : MonoBehaviour
 {
-    private Vector3 velocity;
-
     [Header("Angular X Limits")]
     [SerializeField, Range(-180, 0)]
     private float xLower;

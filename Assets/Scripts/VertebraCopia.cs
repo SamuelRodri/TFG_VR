@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TFG.Behaviour;
 using UnityEngine;
 
 // Clase que representa una unica vertebra
