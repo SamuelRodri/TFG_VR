@@ -7,33 +7,51 @@ namespace TFG.Behaviour
     // Class representing a cartilaginous ligament of the spine
     public class CartilaginousJoint : MonoBehaviour
     {
-        private ConfigurableJoint[] joints; // Previous and Next joints
-        private JointComponent jc;
-        private JointComponent prev;
-        private JointComponent next;
+        [Header("Previous Vertebra Settings")]
+        [SerializeField] GameObject prevVert;
+        [SerializeField] float linearLimitPrev;
 
-        [SerializeField] float linearLimit;
+        [Header("Next Vertebra Settings")]
+        [SerializeField] GameObject nextVert;
+        [SerializeField] float linearLimitNext;
+
+        // ConfigurableJoints
+        private ConfigurableJoint prevJoint;
+        private ConfigurableJoint nextJoint;
+
+        private JointComponent jointComponent;
 
         private void Awake()
         {
-            joints = GetComponents<ConfigurableJoint>();
-            jc = GetComponent<JointComponent>();
-            prev = joints[0].connectedBody.GetComponent<JointComponent>();
-            next = joints[1].connectedBody.GetComponent<JointComponent>();
+            // Initialization of configurable joints
+            prevJoint = GetComponents<ConfigurableJoint>()[0];
+            nextJoint = GetComponents<ConfigurableJoint>()[1];
 
-            // Configurable joints values
-            SoftJointLimit limit = new();
-            limit.limit = linearLimit;
-            joints[0].linearLimit = limit;
+            // Initialization of JointComponent
+            jointComponent = GetComponent<JointComponent>();
         }
 
         private void Start()
         {
-            // Initialize joints connections
-            prev.SetNext(GetComponent<JointComponent>());
-            jc.SetPrev(prev);
-            next.SetPrev(GetComponent<JointComponent>());
-            jc.SetNext(next);
+            // Configurable joints connectedBodies
+            prevJoint.connectedBody = prevVert.GetComponent<Rigidbody>();
+            nextJoint.connectedBody = nextVert.GetComponent<Rigidbody>();
+
+            // Configurable joints linear limits
+            SoftJointLimit auxiliarLimit = new();
+
+            auxiliarLimit.limit = linearLimitPrev;
+            prevJoint.linearLimit = auxiliarLimit;
+
+            auxiliarLimit.limit = linearLimitNext;
+            nextJoint.linearLimit = auxiliarLimit;
+
+            // Initialize joints component links
+            prevVert.GetComponent<JointComponent>().SetNext(jointComponent);
+            nextVert.GetComponent<JointComponent>().SetPrev(jointComponent);
+
+            jointComponent.SetPrev(prevVert.GetComponent<JointComponent>());
+            jointComponent.SetNext(nextVert.GetComponent<JointComponent>());
         }
     }
 }

@@ -16,10 +16,6 @@ public class IKControl : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void Update()
-    {
-    }
-
     private void OnAnimatorIK(int layerIndex)
     {
         if (animator)
