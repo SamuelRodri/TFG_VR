@@ -7,8 +7,9 @@ namespace TFG.Behaviour
     // Class that represents objects joined by joints and control their rotation
     public class JointComponent : MonoBehaviour
     {
-        [SerializeField] JointComponent prev;
-        [SerializeField] JointComponent next;
+        // Previous and Next component
+        private JointComponent prev;
+        private JointComponent next;
 
         private Vector3 rotation;
         public Transform cube;
@@ -43,12 +44,13 @@ namespace TFG.Behaviour
                 rotation = rot.eulerAngles;
             }
 
-            //if (gameObject.name.Equals("Axis (C2)"))
-            //{
-            //    var rot = (cube.rotation * cubeOffset);
-            //    //rotation = CheckHardLimits(rot).eulerAngles;
-            //    transform.rotation = rot;
-            //}
+            // Comentar cuando se ejecute en las gafas
+            if (gameObject.name.Equals("Axis (C2)"))
+            {
+                var rot = (cube.rotation * cubeOffset);
+                //rotation = CheckHardLimits(rot).eulerAngles;
+                rotation = rot.eulerAngles;
+            }
             else
             {
                 #region Rotation
