@@ -45,12 +45,12 @@ namespace TFG.Behaviour
             }
 
             // Comentar cuando se ejecute en las gafas
-            if (gameObject.name.Equals("Axis (C2)"))
-            {
-                var rot = (cube.rotation * cubeOffset);
-                //rotation = CheckHardLimits(rot).eulerAngles;
-                rotation = rot.eulerAngles;
-            }
+            //if (gameObject.name.Equals("Axis (C2)"))
+            //{
+            //    var rot = (cube.rotation * cubeOffset);
+            //    //rotation = CheckHardLimits(rot).eulerAngles;
+            //    rotation = rot.eulerAngles;
+            //}
             else
             {
                 #region Rotation

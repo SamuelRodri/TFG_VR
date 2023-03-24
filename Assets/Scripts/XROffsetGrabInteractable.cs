@@ -40,6 +40,7 @@ namespace TFG.Behaviour
 
         protected override void OnSelectEntering(SelectEnterEventArgs args)
         {
+            Debug.Log("HAs agarrado algo");
             interactor = args.interactorObject;
             isGrabbed = true;
             if (interactor is XRDirectInteractor)
