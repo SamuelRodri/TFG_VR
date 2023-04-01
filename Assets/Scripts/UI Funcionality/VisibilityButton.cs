@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TFG.Behaviour;
 using UnityEngine;
 
 namespace TFG.UI
@@ -31,5 +32,4 @@ namespace TFG.UI
             }
         }
     }
-
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TFG.UI
+namespace TFG.Behaviour
 {
     public enum BodyLayer
     {
