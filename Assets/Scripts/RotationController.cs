@@ -42,7 +42,7 @@ public class RotationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log($"Controlando el vector {vector}");
+        //Debug.Log($"Controlando el vector {vector}");
     }
 
     private void ChangeVector(InputAction.CallbackContext context)

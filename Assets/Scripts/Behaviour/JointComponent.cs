@@ -20,7 +20,6 @@ namespace TFG.Behaviour
         {
             if (!gameObject.name.Equals("Axis (C2)")) return;
             cubeOffset = Quaternion.Inverse(cube.rotation) * transform.rotation;
-            Debug.Log(cubeOffset);
         }
 
         public void SetPrev(JointComponent p)
@@ -41,15 +40,15 @@ namespace TFG.Behaviour
             if (GetComponent<XROffsetGrabInteractable>().isGrabbed) // The object is beign grabed
             {
                 var rot = GetComponent<XROffsetGrabInteractable>().interactor.transform.rotation * GetComponent<XROffsetGrabInteractable>().offset;
+                //rotation = CheckHardLimits(rot).eulerAngles;
                 rotation = rot.eulerAngles;
             }
 
-            // Comentar cuando se ejecute en las gafas
+            ////Comentar cuando se ejecute en las gafas
             //if (gameObject.name.Equals("Axis (C2)"))
             //{
             //    var rot = (cube.rotation * cubeOffset);
-            //    //rotation = CheckHardLimits(rot).eulerAngles;
-            //    rotation = rot.eulerAngles;
+            //    rotation = CheckHardLimits(rot).eulerAngles;
             //}
             else
             {
@@ -61,7 +60,6 @@ namespace TFG.Behaviour
                 if (HasNext()) { nextRot = FollowComponentRotation(next); }
 
                 rotation = Quaternion.Slerp(prevRot, nextRot, 0.5f).eulerAngles;
-                
                 #endregion
             }
 
@@ -85,11 +83,23 @@ namespace TFG.Behaviour
 
             return Quaternion.Euler(rotation);
         }
-
-        
+    
         private Quaternion CheckHardLimits(Quaternion finalRot)
         {
-            return new Quaternion();
+            var a = NormalizeAngles(transform.rotation.eulerAngles - finalRot.eulerAngles);
+            if (a.y > 5)
+            {
+                Debug.Log($"Mi rotacion actual es: {transform.rotation.eulerAngles}");
+                Debug.Log($"Y mi rotacion objetivo es: {finalRot.eulerAngles}");
+                Debug.Log($"Por lo que tengo que moverme: {a}");
+            }
+
+            if (a.x > 5 || a.y > 5 || a.z > 5)
+            {
+                cubeOffset = Quaternion.Inverse(cube.rotation) * transform.rotation;
+                finalRot = transform.rotation;
+            }
+            return finalRot;
         }
 
         public static Vector3 NormalizeAngles(Vector3 angles)
@@ -103,7 +113,7 @@ namespace TFG.Behaviour
 
         public static float NormalizeAngle(float angle)
         {
-            return Mathf.Repeat(angle, 360f);
+            return Mathf.DeltaAngle(angle, 0f);
         }
     }
 }
