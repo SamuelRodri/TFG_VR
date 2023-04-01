@@ -37,5 +37,4 @@ namespace TFG.Behaviour
             cardio.SetActive(!cardio.activeInHierarchy);
         }
     }
-
 }
