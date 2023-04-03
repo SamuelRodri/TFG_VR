@@ -12,7 +12,7 @@ namespace TFG.UI
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.tag.Equals("Controller"))
+            if (other.CompareTag("Controller"))
             {
                 switch (bodyLayer)
                 {

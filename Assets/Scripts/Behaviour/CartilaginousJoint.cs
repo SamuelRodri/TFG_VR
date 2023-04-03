@@ -59,7 +59,7 @@ namespace TFG.Behaviour
             jointComponent.SetNext(nextVert.GetComponent<JointComponent>());
         }
 
-        public void BreakJoints()
+        public void BreakLinks()
         {
             prevJoint.breakForce = 0;
             prevJoint.breakTorque = 0;
