@@ -42,6 +42,7 @@ namespace TFG.Behaviour
                 var rot = GetComponent<XROffsetGrabInteractable>().interactor.transform.rotation * GetComponent<XROffsetGrabInteractable>().offset;
                 //rotation = CheckHardLimits(rot).eulerAngles;
                 rotation = rot.eulerAngles;
+                transform.rotation = Quaternion.Euler(rotation);
             }
 
             ////Comentar cuando se ejecute en las gafas
@@ -52,18 +53,21 @@ namespace TFG.Behaviour
             //}
             else
             {
-                #region Rotation
-                Quaternion prevRot = transform.rotation;
-                Quaternion nextRot = transform.rotation;
+                if (GameObject.Find("SimulationController").GetComponent<SimulationController>().areJointsActivated)
+                {
+                    #region Rotation
+                    Quaternion prevRot = transform.rotation;
+                    Quaternion nextRot = transform.rotation;
 
-                if (HasPrev()) { prevRot = FollowComponentRotation(prev); }
-                if (HasNext()) { nextRot = FollowComponentRotation(next); }
+                    if (HasPrev()) { prevRot = FollowComponentRotation(prev); }
+                    if (HasNext()) { nextRot = FollowComponentRotation(next); }
 
-                rotation = Quaternion.Slerp(prevRot, nextRot, 0.5f).eulerAngles;
-                #endregion
+                    rotation = Quaternion.Slerp(prevRot, nextRot, 0.5f).eulerAngles;
+
+                    transform.rotation = Quaternion.Euler(rotation);
+                    #endregion
+                }
             }
-
-            transform.rotation = Quaternion.Euler(rotation);
         }
 
         // Returns the rotation neccesary to follow a component

@@ -33,6 +33,11 @@ namespace TFG.Behaviour
 
         private void Start()
         {
+            InitializeJoints();
+        }
+
+        private void InitializeJoints()
+        {
             // Configurable joints connectedBodies
             prevJoint.connectedBody = prevVert.GetComponent<Rigidbody>();
             nextJoint.connectedBody = nextVert.GetComponent<Rigidbody>();
@@ -52,6 +57,15 @@ namespace TFG.Behaviour
 
             jointComponent.SetPrev(prevVert.GetComponent<JointComponent>());
             jointComponent.SetNext(nextVert.GetComponent<JointComponent>());
+        }
+
+        public void BreakJoints()
+        {
+            prevJoint.breakForce = 0;
+            prevJoint.breakTorque = 0;
+
+            nextJoint.breakForce = 0;
+            nextJoint.breakTorque = 0;
         }
     }
 }
