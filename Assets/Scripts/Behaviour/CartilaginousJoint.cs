@@ -24,9 +24,9 @@ namespace TFG.Behaviour
         private void Awake()
         {
             // Initialization of configurable joints
-            prevJoint = GetComponents<ConfigurableJoint>()[0];
-            nextJoint = GetComponents<ConfigurableJoint>()[1];
-
+            prevJoint = GetComponentsInChildren<ConfigurableJoint>()[0];
+            nextJoint = GetComponentsInChildren<ConfigurableJoint>()[1];
+            
             // Initialization of JointComponent
             jointComponent = GetComponent<JointComponent>();
         }
@@ -59,13 +59,26 @@ namespace TFG.Behaviour
             jointComponent.SetNext(nextVert.GetComponent<JointComponent>());
         }
 
+        public void RestoreLinks()
+        {
+            prevJoint.xMotion = ConfigurableJointMotion.Locked;
+            prevJoint.yMotion = ConfigurableJointMotion.Limited;
+            prevJoint.zMotion = ConfigurableJointMotion.Locked;
+
+            nextJoint.xMotion = ConfigurableJointMotion.Locked;
+            nextJoint.yMotion = ConfigurableJointMotion.Limited;
+            nextJoint.zMotion = ConfigurableJointMotion.Locked;
+        }
+
         public void BreakLinks()
         {
-            prevJoint.breakForce = 0;
-            prevJoint.breakTorque = 0;
+            prevJoint.xMotion = ConfigurableJointMotion.Free;
+            prevJoint.yMotion = ConfigurableJointMotion.Free;
+            prevJoint.zMotion = ConfigurableJointMotion.Free;
 
-            nextJoint.breakForce = 0;
-            nextJoint.breakTorque = 0;
+            nextJoint.xMotion = ConfigurableJointMotion.Free;
+            nextJoint.yMotion = ConfigurableJointMotion.Free;
+            nextJoint.zMotion = ConfigurableJointMotion.Free;
         }
     }
 }

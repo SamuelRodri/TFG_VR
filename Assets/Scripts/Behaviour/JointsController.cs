@@ -10,7 +10,9 @@ namespace TFG.Behaviour
         
         public void BreakJoints()
         {
-            areJointsActivated = false;
+            if (!areJointsActivated) return;
+
+            Debug.Log("Se rompe");
 
             var joints = Object.FindObjectsOfType<CartilaginousJoint>();
 
@@ -18,6 +20,13 @@ namespace TFG.Behaviour
             {
                 joint.BreakLinks();
             }
+
+            areJointsActivated = false;
+        }
+
+        public void RestoreJoints()
+        {
+            areJointsActivated = true;
         }
     }
 }

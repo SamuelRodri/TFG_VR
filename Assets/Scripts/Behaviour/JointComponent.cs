@@ -43,8 +43,7 @@ namespace TFG.Behaviour
 
         public void Reset()
         {
-            transform.position = initialPosition;
-            transform.rotation = initialRotation;
+            transform.SetPositionAndRotation(initialPosition, initialRotation);
         }
 
         private void Update()
