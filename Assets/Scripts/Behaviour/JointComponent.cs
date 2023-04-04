@@ -16,8 +16,14 @@ namespace TFG.Behaviour
         public Quaternion cubeOffset;
         public Vector3 cubePosOffset;
 
+        private Vector3 initialPosition;
+        private Quaternion initialRotation;
+
         private void Awake()
         {
+            initialPosition = transform.position;
+            initialRotation = transform.rotation;
+
             if (!gameObject.name.Equals("Axis (C2)")) return;
             cubeOffset = Quaternion.Inverse(cube.rotation) * transform.rotation;
         }
@@ -34,6 +40,12 @@ namespace TFG.Behaviour
 
         public bool HasPrev() { return prev != null; }
         public bool HasNext() { return next != null; }
+
+        public void Reset()
+        {
+            transform.position = initialPosition;
+            transform.rotation = initialRotation;
+        }
 
         private void Update()
         {
