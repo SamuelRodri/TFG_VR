@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TFG.UI;
 using UnityEngine;
 
 namespace TFG.Behaviour
@@ -21,6 +22,8 @@ namespace TFG.Behaviour
 
         private JointComponent jointComponent;
 
+        public SimulationController controller;
+
         private void Awake()
         {
             // Initialization of configurable joints
@@ -29,11 +32,16 @@ namespace TFG.Behaviour
             
             // Initialization of JointComponent
             jointComponent = GetComponent<JointComponent>();
+
+            controller = GameObject.Find("SimulationController").GetComponent<SimulationController>();
         }
 
         private void Start()
         {
             InitializeJoints();
+
+            controller.OnBreak += BreakLinks;
+            controller.OnRestore += RestoreLinks;
         }
 
         private void InitializeJoints()

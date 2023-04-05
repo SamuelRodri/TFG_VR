@@ -7,13 +7,13 @@ namespace TFG.UI
 {
     public class JointToggleButton : MonoBehaviour
     {
-        [SerializeField] JointsController controller;
+        [SerializeField] SimulationController controller;
 
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Controller"))
             {
-                controller.BreakJoints();
+                controller.BreakJointsPress();
             }
         }
     }

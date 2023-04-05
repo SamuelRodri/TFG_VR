@@ -1,10 +1,37 @@
 ﻿using TFG.Behaviour;
 using UnityEngine;
 
-namespace TFG.UI
+namespace TFG.Behaviour
 {
     public class SimulationController : MonoBehaviour
     {
+        public delegate void BreakJoints();
+        public event BreakJoints OnBreak;
+
+        public delegate void RestoreJoints();
+        public event RestoreJoints OnRestore;
+
+        public bool areJointsActivated = true;
+
+        public void BreakJointsPress()
+        {
+            if (areJointsActivated)
+            {
+                areJointsActivated = false;
+                OnBreak();
+            }
+        }
+
+        private void Update()
+        {
+            Debug.Log(areJointsActivated);
+        }
+        public void RestoreJointsPress()
+        {
+            areJointsActivated = true;
+            OnRestore();
+        }
+
         public void RestoreColumn()
         {
             var jointComponents = Object.FindObjectsOfType<JointComponent>();
@@ -19,7 +46,7 @@ namespace TFG.UI
                     component.GetComponent<CartilaginousJoint>().RestoreLinks();
                 }
 
-                GetComponent<JointsController>().areJointsActivated = true;
+                areJointsActivated = true;
             }
         }
     }

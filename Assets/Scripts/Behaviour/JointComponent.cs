@@ -28,6 +28,10 @@ namespace TFG.Behaviour
             cubeOffset = Quaternion.Inverse(cube.rotation) * transform.rotation;
         }
 
+        private void Start()
+        {
+            GameObject.Find("SimulationController").GetComponent<SimulationController>().OnRestore += Reset;
+        }
         public void SetPrev(JointComponent p)
         {
             prev = p;
@@ -64,7 +68,7 @@ namespace TFG.Behaviour
             //}
             else
             {
-                if (GameObject.Find("SimulationController").GetComponent<JointsController>().areJointsActivated)
+                if (GameObject.Find("SimulationController").GetComponent<SimulationController>().areJointsActivated)
                 {
                     #region Rotation
                     Quaternion prevRot = transform.rotation;

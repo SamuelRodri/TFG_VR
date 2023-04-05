@@ -786,7 +786,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -845,6 +845,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 1132529855}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &15184079
 GameObject:
   m_ObjectHideFlags: 0
@@ -8429,7 +8430,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -8488,6 +8489,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 322054839}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &141695087
 GameObject:
   m_ObjectHideFlags: 0
@@ -9103,7 +9105,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -9162,6 +9164,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 1572024052}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &152277284
 GameObject:
   m_ObjectHideFlags: 0
@@ -9825,7 +9828,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -9884,6 +9887,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 1963061503}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &155269796
 GameObject:
   m_ObjectHideFlags: 0
@@ -12707,7 +12711,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -12766,6 +12770,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 832553299}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &200135260
 GameObject:
   m_ObjectHideFlags: 0
@@ -14671,6 +14676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8bb8e3671f85f94c9a4c548a7b43a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  areJointsActivated: 1
 --- !u!114 &246078435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19490,7 +19496,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -19549,6 +19555,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 1708636473}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &343648569
 GameObject:
   m_ObjectHideFlags: 0
@@ -27571,7 +27578,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -27630,6 +27637,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 1012936216}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &477829896
 GameObject:
   m_ObjectHideFlags: 0
@@ -29569,7 +29577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522903869}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.385, y: 0, z: 0}
+  m_LocalPosition: {x: -0.408, y: 0, z: 0.222}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -32023,7 +32031,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -32082,6 +32090,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 1003995349}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &572878866
 GameObject:
   m_ObjectHideFlags: 0
@@ -35395,7 +35404,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -35454,6 +35463,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 2013571620}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &626404135
 GameObject:
   m_ObjectHideFlags: 0
@@ -39288,7 +39298,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -39347,6 +39357,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 753422743}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &699144039
 GameObject:
   m_ObjectHideFlags: 0
@@ -43021,7 +43032,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -43080,6 +43091,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 941224610}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &766683216
 GameObject:
   m_ObjectHideFlags: 0
@@ -46789,7 +46801,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -46848,6 +46860,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 863261567}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &832553299
 GameObject:
   m_ObjectHideFlags: 0
@@ -49145,7 +49158,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -49204,6 +49217,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 2059523170}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &856196857
 GameObject:
   m_ObjectHideFlags: 0
@@ -55091,7 +55105,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -55150,6 +55164,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 1615801554}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &941823240
 GameObject:
   m_ObjectHideFlags: 0
@@ -58330,7 +58345,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -58389,6 +58404,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 23968581}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &979596960
 GameObject:
   m_ObjectHideFlags: 0
@@ -61348,7 +61364,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -61407,6 +61423,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 365885185}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &1025723179
 GameObject:
   m_ObjectHideFlags: 0
@@ -73860,7 +73877,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -73919,6 +73936,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 1855125890}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &1255017128
 GameObject:
   m_ObjectHideFlags: 0
@@ -79959,7 +79977,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -80018,6 +80036,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 356073499}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &1378523342
 GameObject:
   m_ObjectHideFlags: 0
@@ -82607,7 +82626,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -82666,6 +82685,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 156443683}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &1425392749
 GameObject:
   m_ObjectHideFlags: 0
@@ -84071,7 +84091,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -84130,6 +84150,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 491638176}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &1458335091
 GameObject:
   m_ObjectHideFlags: 0
@@ -89350,7 +89371,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -89409,6 +89430,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 1684066690}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &1561389927
 GameObject:
   m_ObjectHideFlags: 0
@@ -94798,7 +94820,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -94857,6 +94879,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 622710815}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &1645743248
 GameObject:
   m_ObjectHideFlags: 0
@@ -95604,7 +95627,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -95663,6 +95686,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 1063332268}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &1649395328
 GameObject:
   m_ObjectHideFlags: 0
@@ -96378,7 +96402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55da767d8ba9802469e185943de5a2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 246078435}
+  controller: {fileID: 246078434}
 --- !u!1 &1660629078
 GameObject:
   m_ObjectHideFlags: 0
@@ -104504,7 +104528,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -104563,6 +104587,7 @@ MonoBehaviour:
   linearLimitPrev: 0.002
   nextVert: {fileID: 1300744464}
   linearLimitNext: 0.002
+  controller: {fileID: 0}
 --- !u!1 &1834706401
 GameObject:
   m_ObjectHideFlags: 0
