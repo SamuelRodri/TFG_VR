@@ -22,10 +22,6 @@ namespace TFG.Behaviour
             }
         }
 
-        private void Update()
-        {
-            Debug.Log(areJointsActivated);
-        }
         public void RestoreJointsPress()
         {
             areJointsActivated = true;

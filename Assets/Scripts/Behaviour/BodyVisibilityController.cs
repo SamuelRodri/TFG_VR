@@ -17,14 +17,19 @@ namespace TFG.Behaviour
         [SerializeField] GameObject nervs;
         [SerializeField] GameObject cardio;
 
+        public delegate void Toggle();
+
+        public static event Toggle ToggleSkeleton;
+        public static event Toggle ToggleLigaments;
+
         public void ToggleSkeletonVisibility()
         {
-            skeleton.SetActive(!skeleton.activeInHierarchy);
+            ToggleSkeleton();
         }
 
         public void ToggleLigamentsVisibility()
         {
-            ligaments.SetActive(!ligaments.activeInHierarchy);
+            ToggleLigaments();
         }
 
         public void ToggleNervsVisibility()
