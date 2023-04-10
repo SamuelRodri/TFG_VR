@@ -7,14 +7,13 @@ namespace TFG.DebugManagement
 {
     public class DebugDisplay : MonoBehaviour
     {
-        Dictionary<string, string> debugLogs = new Dictionary<string, string>();
+        Dictionary<string, string> debugLogs = new();
 
         public Text display;
 
         public GameObject vertebra;
         public static string message;
 
-        private static int i = 0;
         private void Update()
         {
             debugLogs.Clear();
