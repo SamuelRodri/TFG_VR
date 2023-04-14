@@ -10,7 +10,6 @@ public class test : MonoBehaviour
     {
         mesh = GetComponent<MeshFilter>().mesh;
         var vertices = mesh.vertices;
-        Debug.Log(vertices.Length);
     }
 
     // Update is called once per frame

@@ -14,7 +14,13 @@ namespace TFG.Behaviour
 
         private void Toggle()
         {
-            GetComponent<MeshRenderer>().enabled = !GetComponent<MeshRenderer>().enabled;
+            if (GetComponent<MeshRenderer>())
+            {
+                GetComponent<MeshRenderer>().enabled = !GetComponent<MeshRenderer>().enabled;
+            }else if (GetComponent<SkinnedMeshRenderer>())
+            {
+                GetComponent<SkinnedMeshRenderer>().enabled = !GetComponent<SkinnedMeshRenderer>().enabled;
+            }
         }
     }
 }
