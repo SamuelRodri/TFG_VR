@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -24,6 +25,8 @@ namespace TFG.Behaviour.Hand
         public float TriggerValue { get => _triggerValue; }
         public bool IsGrabbing { get => _isGrabbing; }
 
+        [SerializeField] Text information;
+
         private void Update()
         {
             var leftHandedControllers = new List<UnityEngine.XR.InputDevice>();
@@ -39,6 +42,12 @@ namespace TFG.Behaviour.Hand
             }
             
             _isGrabbing = (_gripValue > 0 || _triggerValue > 0);
+        }
+
+        protected override void OnSelectEntered(SelectEnterEventArgs args)
+        {
+            information.text = args.interactableObject.transform.name;
+            base.OnSelectEntered(args);
         }
     }
 }

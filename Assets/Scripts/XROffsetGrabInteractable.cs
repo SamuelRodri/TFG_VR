@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
 namespace TFG.Behaviour
@@ -21,10 +23,16 @@ namespace TFG.Behaviour
 
         public Vector3 rotation;
 
+        [SerializeField] GameObject cartel;
+        [SerializeField] TMP_Text information;
 
         // Start is called before the first frame update
         void Start()
         {
+            cartel = transform.GetChild(0).gameObject;
+            information = cartel.transform.GetChild(0).transform.GetChild(0).GetComponent<TMP_Text>();
+            information.text = name;
+
             // Create attach point
             if (!attachTransform)
             {
@@ -40,7 +48,6 @@ namespace TFG.Behaviour
 
         protected override void OnSelectEntering(SelectEnterEventArgs args)
         {
-            Debug.Log("HAs agarrado algo");
             interactor = args.interactorObject;
             isGrabbed = true;
             if (interactor is XRDirectInteractor)
@@ -54,6 +61,7 @@ namespace TFG.Behaviour
                 attachTransform.localRotation = initialAttachLocalRot;
             }
 
+            cartel.SetActive(true);
             offset = Quaternion.Inverse(interactor.transform.rotation) * transform.rotation;
             positionOffset = transform.position - interactor.transform.position;
             base.OnSelectEntering(args);
@@ -62,6 +70,7 @@ namespace TFG.Behaviour
         protected override void OnSelectExited(SelectExitEventArgs args)
         {
             isGrabbed = false;
+            cartel.SetActive(false);
             base.OnSelectExited(args);
         }
     }
