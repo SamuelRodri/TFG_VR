@@ -14,8 +14,8 @@ namespace TFG.Behaviour
 
         private void Toggle()
         {
-            GetComponent<MeshRenderer>().enabled = !GetComponent<MeshRenderer>().enabled;
-            GetComponent<MeshCollider>().enabled = !GetComponent<MeshCollider>().enabled;
+            GetComponent<Renderer>().enabled = !GetComponent<Renderer>().enabled;
+            GetComponent<Collider>().enabled = !GetComponent<Collider>().enabled;
         }
     }
 }
