@@ -21,6 +21,7 @@ namespace TFG.Behaviour
             {
                 GetComponent<SkinnedMeshRenderer>().enabled = !GetComponent<SkinnedMeshRenderer>().enabled;
             }
+            GetComponent<MeshCollider>().enabled = !GetComponent<MeshCollider>().enabled;
         }
     }
 }
