@@ -19,6 +19,7 @@ namespace TFG.Behaviour
         private Vector3 initialPosition;
         private Quaternion initialRotation;
 
+        static int i = 0;
         private void Awake()
         {
             initialPosition = transform.position;
@@ -52,6 +53,7 @@ namespace TFG.Behaviour
 
         private void Update()
         {
+            i+=1;
             if (GetComponent<XROffsetGrabInteractable>().isGrabbed) // The object is beign grabed
             {
                 var rot = GetComponent<XROffsetGrabInteractable>().interactor.transform.rotation * GetComponent<XROffsetGrabInteractable>().offset;
@@ -74,9 +76,10 @@ namespace TFG.Behaviour
                     Quaternion prevRot = transform.rotation;
                     Quaternion nextRot = transform.rotation;
 
+                    
                     if (HasPrev()) { prevRot = FollowComponentRotation(prev); }
                     if (HasNext()) { nextRot = FollowComponentRotation(next); }
-
+                    
                     rotation = Quaternion.Slerp(prevRot, nextRot, 0.5f).eulerAngles;
 
                     transform.rotation = Quaternion.Euler(rotation);
@@ -108,9 +111,9 @@ namespace TFG.Behaviour
             var a = NormalizeAngles(transform.rotation.eulerAngles - finalRot.eulerAngles);
             if (a.y > 5)
             {
-                Debug.Log($"Mi rotacion actual es: {transform.rotation.eulerAngles}");
-                Debug.Log($"Y mi rotacion objetivo es: {finalRot.eulerAngles}");
-                Debug.Log($"Por lo que tengo que moverme: {a}");
+                //Debug.Log($"Mi rotacion actual es: {transform.rotation.eulerAngles}");
+                //Debug.Log($"Y mi rotacion objetivo es: {finalRot.eulerAngles}");
+                //Debug.Log($"Por lo que tengo que moverme: {a}");
             }
 
             if (a.x > 5 || a.y > 5 || a.z > 5)
