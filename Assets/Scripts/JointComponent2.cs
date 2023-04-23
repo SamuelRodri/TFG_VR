@@ -82,7 +82,6 @@ public class JointComponent2 : MonoBehaviour
         //transform.position = final.GetColumn(3);
         //transform.rotation = Quaternion.LookRotation(final.GetColumn(2), final.GetColumn(1));
 
-        Debug.Log(Vector3.Distance(prevObject.transform.TransformPoint(relativePosition), transform.position));
         if(Vector3.Distance(prevObject.transform.TransformPoint(relativePosition), transform.position) > 0.002f)
         {
             Vector3 target = prevObject.transform.TransformPoint(relativePosition);
@@ -91,6 +90,12 @@ public class JointComponent2 : MonoBehaviour
             transform.position = newPosition;
         }
 
-        transform.rotation = prevObject.transform.rotation * relativeRotation;
+        if(Quaternion.Angle(prevObject.transform.rotation * relativeRotation, transform.rotation) > 2.5f)
+        {
+            Quaternion target = prevObject.transform.rotation * relativeRotation;
+            Quaternion newRotation = Quaternion.Slerp(transform.rotation, target, 0.45f);
+
+            transform.rotation = newRotation;
+        }
     }
 }
