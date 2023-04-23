@@ -41,7 +41,7 @@ public class JointComponent2 : MonoBehaviour
 
         relativePosition = prevObject.transform.InverseTransformPoint(transform.position);
         relativeRotation = Quaternion.Inverse(prevObject.transform.rotation) * transform.rotation;
-        relativeScale = Vector3.Scale(transform.localScale, Vector3.one / prevObject.transform.localScale.x);
+        //relativeScale = Vector3.Scale(transform.localScale, Vector3.one / prevObject.transform.localScale.x);
     }
 
     // Update is called once per frame
@@ -82,8 +82,15 @@ public class JointComponent2 : MonoBehaviour
         //transform.position = final.GetColumn(3);
         //transform.rotation = Quaternion.LookRotation(final.GetColumn(2), final.GetColumn(1));
 
-        transform.position = prevObject.transform.TransformPoint(relativePosition);
+        Debug.Log(Vector3.Distance(prevObject.transform.TransformPoint(relativePosition), transform.position));
+        if(Vector3.Distance(prevObject.transform.TransformPoint(relativePosition), transform.position) > 0.002f)
+        {
+            Vector3 target = prevObject.transform.TransformPoint(relativePosition);
+            Vector3 newPosition = Vector3.Lerp(transform.position, target, 0.57f);
+
+            transform.position = newPosition;
+        }
+
         transform.rotation = prevObject.transform.rotation * relativeRotation;
-        transform.localScale = Vector3.Scale(prevObject.transform.localScale, relativeScale);
     }
 }
