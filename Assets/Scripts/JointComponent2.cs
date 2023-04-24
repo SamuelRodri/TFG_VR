@@ -12,7 +12,7 @@ public class JointComponent2 : MonoBehaviour
     private Quaternion rotationalOffset;
     private Quaternion rotationInicial;
 
-    public float umbral = 0.006f;
+    public static float umbral = 0f;
 
     private Vector3 antPrev;
     Vector3 posicionRelativa;
@@ -63,26 +63,26 @@ public class JointComponent2 : MonoBehaviour
     {
         if (nextObject) // Tiene "hijo"
         {
-                Vector3 target = nextObject.transform.TransformPoint(relativePositionNext);
-                Vector3 newPosition = Vector3.Lerp(transform.position, target, 50 * Time.deltaTime);
+            Vector3 target = nextObject.transform.TransformPoint(relativePositionNext);
+            Vector3 newPosition = Vector3.Lerp(transform.position, target, 0.7f);
 
-                finalPosNext = newPosition;
+            finalPosNext = Vector3.Distance(newPosition, transform.position) > 0.005 ? newPosition : transform.position;
 
             Quaternion targetRot = nextObject.transform.rotation * relativeRotationNext;
-            Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRot, 50 * Time.deltaTime);
+            Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRot, 0.6f);
 
             finalRotNext = newRotation;
         }
 
         if (prevObject) // Tiene "padre"
         {
-                Vector3 target = prevObject.transform.TransformPoint(relativePositionPrev);
-                Vector3 newPosition = Vector3.Lerp(transform.position, target, 50 * Time.deltaTime);
+            Vector3 target = prevObject.transform.TransformPoint(relativePositionPrev);
+            Vector3 newPosition = Vector3.Lerp(transform.position, target, 0.7f);
 
-                finalPosPrev = newPosition;
+            finalPosPrev = Vector3.Distance(newPosition, transform.position) > 0.005 ? newPosition : transform.position;
 
-                Quaternion targetRot = prevObject.transform.rotation * relativeRotationPrev;
-                Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRot, 50 * Time.deltaTime);
+            Quaternion targetRot = prevObject.transform.rotation * relativeRotationPrev;
+            Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime);
 
             finalRotPrev = newRotation;
         }
@@ -101,8 +101,9 @@ public class JointComponent2 : MonoBehaviour
             }
             else
             {
-                transform.position = Vector3.Lerp(finalPosPrev, finalPosNext, 0.5f);
-                transform.rotation = Quaternion.Lerp(finalRotPrev, finalRotNext, 0.5f);
+                // Aquí va raro, si lo pones a 1 va bien pero solo coge el next
+                transform.position = Vector3.Slerp(finalPosPrev, finalPosNext, 1f); 
+                transform.rotation = Quaternion.Lerp(finalRotPrev, finalRotNext, 1f);
             }
         }
     }

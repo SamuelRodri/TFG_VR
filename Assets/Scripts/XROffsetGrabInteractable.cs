@@ -50,6 +50,7 @@ namespace TFG.Behaviour
         {
             interactor = args.interactorObject;
             isGrabbed = true;
+            GetComponent<JointComponent2>().isGrabbed = true;
             if (interactor is XRDirectInteractor)
             {
                 attachTransform.position = interactor.transform.position;
@@ -70,6 +71,7 @@ namespace TFG.Behaviour
         protected override void OnSelectExited(SelectExitEventArgs args)
         {
             isGrabbed = false;
+            GetComponent<JointComponent2>().isGrabbed = false;
             cartel.SetActive(false);
             base.OnSelectExited(args);
         }
