@@ -56,7 +56,6 @@ public class JointComponent2 : MonoBehaviour
             relativePositionPrev = prevObject.transform.InverseTransformPoint(transform.position);
             relativeRotationPrev = Quaternion.Inverse(prevObject.transform.rotation) * transform.rotation;
         }
-        
     }
 
     // Update is called once per frame
@@ -69,10 +68,10 @@ public class JointComponent2 : MonoBehaviour
 
                 finalPosNext = newPosition;
 
-                Quaternion targetRot = nextObject.transform.rotation * relativeRotationNext;
-                Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRot, 50 * Time.deltaTime);
+            Quaternion targetRot = nextObject.transform.rotation * relativeRotationNext;
+            Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRot, 50 * Time.deltaTime);
 
-                transform.rotation = newRotation;
+            finalRotNext = newRotation;
         }
 
         if (prevObject) // Tiene "padre"
@@ -85,40 +84,26 @@ public class JointComponent2 : MonoBehaviour
                 Quaternion targetRot = prevObject.transform.rotation * relativeRotationPrev;
                 Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRot, 50 * Time.deltaTime);
 
-                transform.rotation = newRotation;
+            finalRotPrev = newRotation;
         }
 
         if (!isGrabbed)
         {
-            if (prevObject) // Si tiene padre
+            if (!nextObject) // No tiene hijo
             {
-                if (nextObject) // Si tiene hijo
-                {
-                    if (!prevObject.GetComponent<JointComponent2>().isGrabbed && nextObject.GetComponent<JointComponent2>().isGrabbed)
-                    {
-                        transform.position = Vector3.Slerp(finalPosPrev, finalPosNext, 0.8f);
-                    }else if (prevObject.GetComponent<JointComponent2>().isGrabbed && !nextObject.GetComponent<JointComponent2>().isGrabbed)
-                    {
-                        transform.position = Vector3.Slerp(finalPosPrev, finalPosNext, 0.2f);
-                    }
-                    else
-                    {
-                        transform.position = Vector3.Slerp(finalPosPrev, finalPosNext, 0.5f);
-                    }
-                }
-                else
-                {
-                    transform.position = finalPosPrev;
-                }
+                transform.position = finalPosPrev;
+                transform.rotation = finalRotPrev;
             }
-            else // Si no tiene padre
+            else if (!prevObject)
             {
-                if (nextObject) // Si tiene hijo
-                {
-                    transform.position = finalPosNext;
-                }
+                transform.position = finalPosNext;
+                transform.rotation = finalRotNext;
             }
-            
+            else
+            {
+                transform.position = Vector3.Lerp(finalPosPrev, finalPosNext, 0.5f);
+                transform.rotation = Quaternion.Lerp(finalRotPrev, finalRotNext, 0.5f);
+            }
         }
     }
 }
