@@ -27,13 +27,19 @@ public class JointComponent2 : MonoBehaviour
     private Quaternion relativeRotationNext;
     private Vector3 relativePositionPrev;
     private Quaternion relativeRotationPrev;
-    private Vector3 relativeScale;
+    private Vector3 lastPosition;
 
     private Vector3 finalPosNext;
     private Vector3 finalPosPrev;
 
     private Quaternion finalRotNext;
     private Quaternion finalRotPrev;
+
+    public bool canMove = true;
+
+    float step = 0f;
+    float speed = 20;
+    bool a = false;
 
     private void Awake()
     {
@@ -61,34 +67,56 @@ public class JointComponent2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float prevDistance = 0, nextDistance = 0;
+        float prevRot = 0, nextRot = 0;
+
+        finalPosPrev = transform.position;
+        finalPosNext = transform.position;
+
         if (nextObject) // Tiene "hijo"
         {
             Vector3 target = nextObject.transform.TransformPoint(relativePositionNext);
-            Vector3 newPosition = Vector3.Lerp(transform.position, target, 0.7f);
 
-            finalPosNext = Vector3.Distance(newPosition, transform.position) > 0.005 ? newPosition : transform.position;
+            //Vector3 newPosition = Vector3.Slerp(transform.position, target, 1);
+            //finalPosNext = Vector3.Distance(nextObject.transform.position, target) > 0.005 ? newPosition : transform.position;
+            finalPosNext = target;
 
             Quaternion targetRot = nextObject.transform.rotation * relativeRotationNext;
-            Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRot, 0.6f);
+            Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRot, 1f);
 
-            finalRotNext = newRotation;
+            finalRotNext = Quaternion.Angle(transform.rotation, newRotation) > 3 ? newRotation : transform.rotation;
+
+            //nextDistance = Vector3.Distance(transform.position, newPosition);
+
+            nextRot = Quaternion.Angle(transform.rotation, newRotation);
+
         }
 
         if (prevObject) // Tiene "padre"
         {
             Vector3 target = prevObject.transform.TransformPoint(relativePositionPrev);
-            Vector3 newPosition = Vector3.Lerp(transform.position, target, 0.7f);
 
-            finalPosPrev = Vector3.Distance(newPosition, transform.position) > 0.005 ? newPosition : transform.position;
+            //Vector3 newPosition = Vector3.Lerp(transform.position, target, 1);
+            //finalPosPrev = Vector3.Distance(transform.position, target) > 0.005 ? newPosition : transform.position;
+            finalPosPrev = target;
 
             Quaternion targetRot = prevObject.transform.rotation * relativeRotationPrev;
-            Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime);
+            Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRot, 1f);
 
-            finalRotPrev = newRotation;
+            finalRotPrev = Quaternion.Angle(transform.rotation, newRotation) > 3 ? newRotation : transform.rotation;
+
+            //prevDistance = Vector3.Distance(transform.position, newPosition);
+
+            prevRot = Quaternion.Angle(transform.rotation, newRotation);
         }
 
         if (!isGrabbed)
         {
+            if (prevDistance > 0.03 || nextDistance > 0.03 || nextRot > 5 || prevRot > 5)
+            {
+                //return;
+            }
+
             if (!nextObject) // No tiene hijo
             {
                 transform.position = finalPosPrev;
@@ -96,14 +124,14 @@ public class JointComponent2 : MonoBehaviour
             }
             else if (!prevObject)
             {
+                Debug.Log($"Soy {name} y me voy a mover a la posicion de mi next {finalPosNext}");
                 transform.position = finalPosNext;
                 transform.rotation = finalRotNext;
             }
             else
             {
-                // Aquí va raro, si lo pones a 1 va bien pero solo coge el next
-                transform.position = Vector3.Slerp(finalPosPrev, finalPosNext, 1f); 
-                transform.rotation = Quaternion.Lerp(finalRotPrev, finalRotNext, 1f);
+                transform.position = Vector3.Slerp(finalPosPrev, finalPosNext, 1f);
+                transform.rotation = Quaternion.Lerp(finalRotPrev, finalRotNext, 0.5f);
             }
         }
     }

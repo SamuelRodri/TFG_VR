@@ -15,7 +15,7 @@ namespace TFG.Utils
 
             BreakHierarchy myScript = (BreakHierarchy)target;
 
-            if(GUILayout.Button("Set Parent"))
+            if(GUILayout.Button("Execute"))
             {
                 myScript.SetParent();
             }

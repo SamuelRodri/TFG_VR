@@ -7,22 +7,18 @@ namespace TFG.Utils
     // Set a parent object breking the hierarchy
     public class BreakHierarchy : MonoBehaviour
     {
-        public GameObject parent;
-
         public void SetParent()
         {
-            if(transform.childCount > 0)
+            for(int i = 0; i < transform.childCount; i++)
             {
-                try
-                {
-                    transform.parent = parent.transform;
-                    transform.GetChild(0).GetComponent<BreakHierarchy>().SetParent();
-                }
-                catch
-                {
-                    Debug.Log("No lo tiene");
-                }
+                transform.GetChild(i).gameObject.AddComponent<JointComponent3>();
+                transform.GetChild(i).gameObject.GetComponent<JointComponent3>().prevObject = 
+                    transform.GetChild(i).gameObject.GetComponent<JointComponent2>().prevObject;
+                transform.GetChild(i).gameObject.GetComponent<JointComponent3>().nextObject =
+                    transform.GetChild(i).gameObject.GetComponent<JointComponent2>().nextObject;
             }
+
+            
         }
     }
 }
