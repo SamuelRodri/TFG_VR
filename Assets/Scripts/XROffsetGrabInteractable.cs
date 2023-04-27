@@ -20,6 +20,7 @@ namespace TFG.Behaviour
         public Vector3 vertebraDiff;
 
         public RotationController rc;
+        private Rigidbody rb;
 
         public Vector3 rotation;
         [SerializeField] GameObject cartel;
@@ -28,9 +29,12 @@ namespace TFG.Behaviour
         Vector3 relativePosition;
         Quaternion relativeRotation;
 
+        public GameObject cube;
+
         // Start is called before the first frame update
         void Start()
         {
+            rb = GetComponent<Rigidbody>();
             cartel = transform.GetChild(0).gameObject;
             information = cartel.transform.GetChild(0).transform.GetChild(0).GetComponent<TMP_Text>();
             information.text = name;
@@ -45,7 +49,9 @@ namespace TFG.Behaviour
 
             initialAttachLocalPos = attachTransform.localPosition;
             initialAttachLocalRot = attachTransform.localRotation;
-
+            var interactor = cube;
+            relativePosition = interactor.transform.InverseTransformPoint(transform.position);
+            relativeRotation = Quaternion.Inverse(interactor.transform.rotation) * transform.rotation;
             rc = GameObject.Find("RotationController").GetComponent<RotationController>();
         }
 
@@ -71,7 +77,7 @@ namespace TFG.Behaviour
             relativePosition = interactor.transform.InverseTransformPoint(transform.position);
             relativeRotation = Quaternion.Inverse(interactor.transform.rotation) * transform.rotation;
 
-            base.OnSelectEntering(args);
+            //base.OnSelectEntering(args);
         }
 
         protected override void OnSelectExited(SelectExitEventArgs args)
@@ -84,40 +90,41 @@ namespace TFG.Behaviour
 
         private void Update()
         {
-            //if (isGrabbed)
-            //{
-            //    Vector3 target = interactor.transform.TransformPoint(relativePosition);
-            //    Quaternion targetRot = interactor.transform.rotation * relativeRotation;
+            if (isGrabbed)
+            {
+                var interactor = cube;
+                Vector3 target = interactor.transform.TransformPoint(relativePosition);
+                Quaternion targetRot = interactor.transform.rotation * relativeRotation;
 
-            //    var prev = GetComponent<JointComponent2>().prevObject;
-            //    var next = GetComponent<JointComponent2>().nextObject;
+                var prev = GetComponent<JointComponent3>().prevObject;
+                var next = GetComponent<JointComponent3>().nextObject;
 
-            //    float prevDistance = 0, nextDistance = 0;
-            //    float prevRot = 0, nextRot = 0;
+                float prevDistance = 0.01f, nextDistance = 0.01f;
+                float prevRot = 0, nextRot = 0;
 
-            //    if (prev)
-            //    {
-            //        prevDistance = Vector3.Distance(prev.transform.position, target);
-            //        prevRot = Quaternion.Angle(prev.transform.rotation, transform.rotation);
-            //    }
+                if (prev)
+                {
+                    prevDistance = Vector3.Distance(prev.transform.position, interactor.transform.position);
+                    prevRot = Quaternion.Angle(prev.transform.rotation, targetRot);
+                }
 
-            //    if (next)
-            //    {
-            //        nextDistance = Vector3.Distance(next.transform.position, target);
-            //        nextRot = Quaternion.Angle(next.transform.rotation, transform.rotation);
-            //    }
+                if (next)
+                {
+                    nextDistance = Vector3.Distance(next.transform.position, interactor.transform.position);
+                    nextRot = Quaternion.Angle(next.transform.rotation, targetRot);
+                }
 
+                var firstDistancePrev = GetComponent<JointComponent3>().firstDistancePrev;
+                var firstDistanceNext = GetComponent<JointComponent3>().firstDistanceNext;
 
-            //    if (nextDistance < 0.03 && prevDistance < 0.03 && prevRot < 5 && nextRot < 5)
-            //    {
-            //        transform.position = target;
-            //        transform.rotation = targetRot;
-            //    }
-            //    else
-            //    {
-            //        isGrabbed = false;
-            //    }
-            //}
+                rb.MovePosition(target);
+
+                transform.rotation = targetRot;
+                //else
+                //{
+                //    isGrabbed = false;
+                //}
+            }
         }
     }
 }
