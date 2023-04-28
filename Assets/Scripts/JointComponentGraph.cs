@@ -15,18 +15,23 @@ public class JointComponentGraph : MonoBehaviour
     private Quaternion relativeRotationPrev;
     private Quaternion relativeRotationNext;
 
+    private float firstPrevDistance;
+    private float firstNextDistance;
+
     private void Start()
     {
         if (prevObject)
         {
             relativePositionPrev = prevObject.transform.InverseTransformPoint(transform.position);
             relativeRotationPrev = Quaternion.Inverse(prevObject.transform.rotation) * transform.rotation;
+            firstPrevDistance = Vector3.Distance(transform.position, prevObject.transform.position);
         }
 
         if (nextObject)
         {
             relativePositionNext = nextObject.transform.InverseTransformPoint(transform.position);
             relativeRotationNext = Quaternion.Inverse(nextObject.transform.rotation) * transform.rotation;
+            firstNextDistance = Vector3.Distance(transform.position, nextObject.transform.position);
         }
     }
 
@@ -50,17 +55,25 @@ public class JointComponentGraph : MonoBehaviour
     // Function to follow the position and rotation of an object
     public void UpdateTransformToFollowObject(JointComponentGraph objectToFollow)
     {
-        (Vector3 relativePos, Quaternion relativeRot) target = GetRelativeTransform(objectToFollow);
+        float distance = Vector3.Distance(transform.position, objectToFollow.transform.position);
+        float firstDistance = (objectToFollow == prevObject) ? firstPrevDistance : firstNextDistance;
 
-        Vector3 targetPosition = objectToFollow.transform.TransformPoint(target.relativePos);
-        Quaternion targetRotation = objectToFollow.transform.rotation * target.relativeRot;
+        if(Mathf.Abs(distance - firstDistance) > 0.0005)
+        {
+            (Vector3 relativePos, Quaternion relativeRot) = GetRelativeTransform(objectToFollow);
 
-        transform.SetPositionAndRotation(targetPosition, targetRotation);
+            Vector3 targetPosition = objectToFollow.transform.TransformPoint(relativePos);
+            Quaternion targetRotation = objectToFollow.transform.rotation * relativeRot;
+
+            targetPosition = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * 8.5f);
+            transform.SetPositionAndRotation(targetPosition, targetRotation);
+        }
 
         JointComponentGraph neighbor = (nextObject && objectToFollow != nextObject) ? nextObject :
-                                       (prevObject && objectToFollow != prevObject) ? prevObject : null;
+                                        (prevObject && objectToFollow != prevObject) ? prevObject : null;
 
         if (neighbor) neighbor.UpdateTransformToFollowObject(this);
+
     }
 
     // Funcion que devuelve la posicion y rotacion relativa en funcion del vecino que llama
@@ -70,5 +83,17 @@ public class JointComponentGraph : MonoBehaviour
         Quaternion relativeRot = (objectToFollow == prevObject) ? relativeRotationPrev : relativeRotationNext;
 
         return (relativePos, relativeRot);
+    }
+
+    private void UpdateRelativeTransform(JointComponentGraph objectToFollow)
+    {
+        if(objectToFollow == prevObject)
+        {
+            relativePositionPrev = prevObject.transform.InverseTransformPoint(transform.position);
+        }
+        else if(objectToFollow == nextObject)
+        {
+            relativePositionNext = nextObject.transform.InverseTransformPoint(transform.position);
+        }
     }
 }
