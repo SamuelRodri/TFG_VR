@@ -89,6 +89,7 @@ public class JointComponent3 : MonoBehaviour
             prevDistance = Vector3.Distance(prevObject.transform.position, finalPos);
             prevAngle = Quaternion.Angle(transform.rotation, finalRot);
         }
+
         if (nextObject)
         {
             nextDistance = Vector3.Distance(nextObject.transform.position, finalPos);
@@ -96,14 +97,14 @@ public class JointComponent3 : MonoBehaviour
         }
 
         // Soft Limits
-        if (prevAngle < 1.5 || nextAngle < 1.5) return;
-        if (prevDistance < 0.001 || nextDistance < 0.001) return;
+        //if (prevAngle < 1.5 || nextAngle < 1.5) return;
+        //if (prevDistance < 0.001 || nextDistance < 0.001) return;
         
 
-        // Hard Limits
-        if (Mathf.Abs(prevDistance - firstDistancePrev) > 0.01 ||
-            Mathf.Abs(nextDistance - firstDistanceNext) > 0.01) return;
-        if (prevAngle > 10 || nextAngle > 10) return;
+        //// Hard Limits
+        //if (Mathf.Abs(prevDistance - firstDistancePrev) > 0.01 ||
+        //    Mathf.Abs(nextDistance - firstDistanceNext) > 0.01) return;
+        //if (prevAngle > 10 || nextAngle > 10) return;
 
         rb.MovePosition(finalPos);
         transform.rotation = finalRot;

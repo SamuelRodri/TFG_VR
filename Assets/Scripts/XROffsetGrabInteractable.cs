@@ -49,9 +49,11 @@ namespace TFG.Behaviour
 
             initialAttachLocalPos = attachTransform.localPosition;
             initialAttachLocalRot = attachTransform.localRotation;
-            var interactor = cube;
-            relativePosition = interactor.transform.InverseTransformPoint(transform.position);
-            relativeRotation = Quaternion.Inverse(interactor.transform.rotation) * transform.rotation;
+
+            //var interactor = cube;
+            //relativePosition = interactor.transform.InverseTransformPoint(transform.position);
+            //relativeRotation = Quaternion.Inverse(interactor.transform.rotation) * transform.rotation;
+
             rc = GameObject.Find("RotationController").GetComponent<RotationController>();
         }
 
@@ -92,7 +94,7 @@ namespace TFG.Behaviour
         {
             if (isGrabbed)
             {
-                var interactor = cube;
+                //var interactor = cube;
                 Vector3 target = interactor.transform.TransformPoint(relativePosition);
                 Quaternion targetRot = interactor.transform.rotation * relativeRotation;
 
