@@ -62,7 +62,7 @@ namespace TFG.Behaviour
             Debug.Log("AGARRAS");
             interactor = args.interactorObject;
             isGrabbed = true;
-            GetComponent<JointComponent3>().isGrabbed = true;
+            GetComponent<JointComponentGraph>().isGrabbed = true;
             if (interactor is XRDirectInteractor)
             {
                 attachTransform.position = interactor.transform.position;
@@ -75,58 +75,58 @@ namespace TFG.Behaviour
             }
 
             cartel.SetActive(true);
+            //relativePosition = interactor.transform.InverseTransformPoint(transform.position);
+            //relativeRotation = Quaternion.Inverse(interactor.transform.rotation) * transform.rotation;
 
-            relativePosition = interactor.transform.InverseTransformPoint(transform.position);
-            relativeRotation = Quaternion.Inverse(interactor.transform.rotation) * transform.rotation;
-
-            //base.OnSelectEntering(args);
+            base.OnSelectEntering(args);
         }
 
         protected override void OnSelectExited(SelectExitEventArgs args)
         {
+            Debug.Log("SUELTAS");
             isGrabbed = false;
-            GetComponent<JointComponent3>().isGrabbed = false;
+            GetComponent<JointComponentGraph>().isGrabbed = false;
             cartel.SetActive(false);
             base.OnSelectExited(args);
         }
 
         private void Update()
         {
-            if (isGrabbed)
-            {
-                //var interactor = cube;
-                Vector3 target = interactor.transform.TransformPoint(relativePosition);
-                Quaternion targetRot = interactor.transform.rotation * relativeRotation;
+            //if (isGrabbed)
+            //{
+            //    //var interactor = cube;
+            //    Vector3 target = interactor.transform.TransformPoint(relativePosition);
+            //    Quaternion targetRot = interactor.transform.rotation * relativeRotation;
 
-                var prev = GetComponent<JointComponent3>().prevObject;
-                var next = GetComponent<JointComponent3>().nextObject;
+            //    var prev = GetComponent<JointComponent3>().prevObject;
+            //    var next = GetComponent<JointComponent3>().nextObject;
 
-                float prevDistance = 0.01f, nextDistance = 0.01f;
-                float prevRot = 0, nextRot = 0;
+            //    float prevDistance = 0.01f, nextDistance = 0.01f;
+            //    float prevRot = 0, nextRot = 0;
 
-                if (prev)
-                {
-                    prevDistance = Vector3.Distance(prev.transform.position, interactor.transform.position);
-                    prevRot = Quaternion.Angle(prev.transform.rotation, targetRot);
-                }
+            //    if (prev)
+            //    {
+            //        prevDistance = Vector3.Distance(prev.transform.position, interactor.transform.position);
+            //        prevRot = Quaternion.Angle(prev.transform.rotation, targetRot);
+            //    }
 
-                if (next)
-                {
-                    nextDistance = Vector3.Distance(next.transform.position, interactor.transform.position);
-                    nextRot = Quaternion.Angle(next.transform.rotation, targetRot);
-                }
+            //    if (next)
+            //    {
+            //        nextDistance = Vector3.Distance(next.transform.position, interactor.transform.position);
+            //        nextRot = Quaternion.Angle(next.transform.rotation, targetRot);
+            //    }
 
-                var firstDistancePrev = GetComponent<JointComponent3>().firstDistancePrev;
-                var firstDistanceNext = GetComponent<JointComponent3>().firstDistanceNext;
+            //    var firstDistancePrev = GetComponent<JointComponent3>().firstDistancePrev;
+            //    var firstDistanceNext = GetComponent<JointComponent3>().firstDistanceNext;
 
-                rb.MovePosition(target);
+            //    rb.MovePosition(target);
 
-                transform.rotation = targetRot;
-                //else
-                //{
-                //    isGrabbed = false;
-                //}
-            }
+            //    transform.rotation = targetRot;
+            //    //else
+            //    //{
+            //    //    isGrabbed = false;
+            //    //}
+            //}
         }
     }
 }

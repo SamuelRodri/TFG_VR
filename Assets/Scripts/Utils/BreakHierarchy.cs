@@ -11,14 +11,18 @@ namespace TFG.Utils
         {
             for(int i = 0; i < transform.childCount; i++)
             {
-                transform.GetChild(i).gameObject.AddComponent<JointComponent3>();
-                transform.GetChild(i).gameObject.GetComponent<JointComponent3>().prevObject = 
-                    transform.GetChild(i).gameObject.GetComponent<JointComponent2>().prevObject;
-                transform.GetChild(i).gameObject.GetComponent<JointComponent3>().nextObject =
-                    transform.GetChild(i).gameObject.GetComponent<JointComponent2>().nextObject;
+                //transform.GetChild(i).gameObject.AddComponent<JointComponentGraph>();
             }
 
-            
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).gameObject.GetComponent<JointComponentGraph>().prevObject =
+                    transform.GetChild(i).gameObject.GetComponent<JointComponent3>().prevObject.GetComponent<JointComponentGraph>();
+                transform.GetChild(i).gameObject.GetComponent<JointComponentGraph>().nextObject =
+                    transform.GetChild(i).gameObject.GetComponent<JointComponent3>().nextObject.GetComponent<JointComponentGraph>();
+            }
+
+
         }
     }
 }
