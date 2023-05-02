@@ -55,19 +55,24 @@ public class JointComponentGraph : MonoBehaviour
     // Function to follow the position and rotation of an object
     public void UpdateTransformToFollowObject(JointComponentGraph objectToFollow)
     {
+        if (isGrabbed) return;
         float distance = Vector3.Distance(transform.position, objectToFollow.transform.position);
         float firstDistance = (objectToFollow == prevObject) ? firstPrevDistance : firstNextDistance;
 
-        if(Mathf.Abs(distance - firstDistance) > 0.0005)
+        Vector3 targetPosition = transform.position;
+        Quaternion targetRotation = transform.rotation;
+
+        (Vector3 relativePos, Quaternion relativeRot) = GetRelativeTransform(objectToFollow);
+
+        if (Mathf.Abs(distance - firstDistance) > 0.0005 || Quaternion.Angle(transform.rotation, objectToFollow.transform.rotation) > 7) // Soft Limit Linear
         {
-            (Vector3 relativePos, Quaternion relativeRot) = GetRelativeTransform(objectToFollow);
 
-            Vector3 targetPosition = objectToFollow.transform.TransformPoint(relativePos);
-            Quaternion targetRotation = objectToFollow.transform.rotation * relativeRot;
-
-            targetPosition = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * 8.5f);
-            transform.SetPositionAndRotation(targetPosition, targetRotation);
+            targetPosition = objectToFollow.transform.TransformPoint(relativePos);
+            targetRotation = objectToFollow.transform.rotation * relativeRot;
         }
+
+        transform.SetPositionAndRotation(targetPosition, targetRotation);
+
 
         JointComponentGraph neighbor = (nextObject && objectToFollow != nextObject) ? nextObject :
                                         (prevObject && objectToFollow != prevObject) ? prevObject : null;
