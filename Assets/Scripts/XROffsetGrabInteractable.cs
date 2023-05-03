@@ -111,7 +111,7 @@ namespace TFG.Behaviour
                 float prevDistanceDiff2 = Math.Abs(prevDistance2 - joint.firstPrevDistance);
                 float nextDistanceDiff2 = Math.Abs(nextDistance2 - joint.firstNextDistance);
 
-                if (prevDistanceDiff2 > hardLimitPosition || nextDistanceDiff2 > hardLimitPosition) return;
+                //if (prevDistanceDiff2 > hardLimitPosition || nextDistanceDiff2 > hardLimitPosition) return;
 
                 transform.SetPositionAndRotation(targetPosition, targetRot);
             }

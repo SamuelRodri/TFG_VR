@@ -22,8 +22,8 @@ public class JointComponentGraph : MonoBehaviour
 
     private bool isMoved;
 
-    public float softLimitPosition = 0.001f;
-    public float hardLimitPosition = 0.008f;
+    public float softLimitPosition = 0.002f;
+    public float hardLimitPosition = 0.006f;
 
     private void Start()
     {
@@ -97,7 +97,7 @@ public class JointComponentGraph : MonoBehaviour
         float nextDistanceDiff2 = Math.Abs(nextDistance2 - firstNextDistance);
 
         // HardLimit
-        if (prevDistanceDiff2 > hardLimitPosition || nextDistanceDiff2 > hardLimitPosition) return;
+        //if (prevDistanceDiff2 > hardLimitPosition || nextDistanceDiff2 > hardLimitPosition) return;
 
         if (prevDistanceDiff > softLimitPosition || nextDistanceDiff > softLimitPosition) // SoftLimit
         {
