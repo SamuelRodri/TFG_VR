@@ -94,38 +94,11 @@ namespace TFG.Behaviour
         {
             //if (isGrabbed)
             //{
-            //    //var interactor = cube;
+            //    var interactor = cube;
             //    Vector3 target = interactor.transform.TransformPoint(relativePosition);
             //    Quaternion targetRot = interactor.transform.rotation * relativeRotation;
 
-            //    var prev = GetComponent<JointComponent3>().prevObject;
-            //    var next = GetComponent<JointComponent3>().nextObject;
-
-            //    float prevDistance = 0.01f, nextDistance = 0.01f;
-            //    float prevRot = 0, nextRot = 0;
-
-            //    if (prev)
-            //    {
-            //        prevDistance = Vector3.Distance(prev.transform.position, interactor.transform.position);
-            //        prevRot = Quaternion.Angle(prev.transform.rotation, targetRot);
-            //    }
-
-            //    if (next)
-            //    {
-            //        nextDistance = Vector3.Distance(next.transform.position, interactor.transform.position);
-            //        nextRot = Quaternion.Angle(next.transform.rotation, targetRot);
-            //    }
-
-            //    var firstDistancePrev = GetComponent<JointComponent3>().firstDistancePrev;
-            //    var firstDistanceNext = GetComponent<JointComponent3>().firstDistanceNext;
-
-            //    rb.MovePosition(target);
-
-            //    transform.rotation = targetRot;
-            //    //else
-            //    //{
-            //    //    isGrabbed = false;
-            //    //}
+            //    transform.SetPositionAndRotation(target, targetRot);
             //}
         }
     }
