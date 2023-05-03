@@ -75,7 +75,11 @@ namespace TFG.Behaviour
                 attachTransform.localRotation = initialAttachLocalRot;
             }
 
-            cartel.SetActive(true);
+            if (!FindObjectOfType<SimulationController>().areJointsActivated)
+            {
+                cartel.SetActive(true);
+            }
+
             relativePosition = interactor.transform.InverseTransformPoint(transform.position);
             relativeRotation = Quaternion.Inverse(interactor.transform.rotation) * transform.rotation;
 

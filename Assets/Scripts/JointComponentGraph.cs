@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TFG.Behaviour;
 using UnityEngine;
 
 public class JointComponentGraph : MonoBehaviour
@@ -50,6 +51,7 @@ public class JointComponentGraph : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!FindObjectOfType<SimulationController>().areJointsActivated) return;
         if (!isGrabbed) return;
 
         if(lastPost != transform.position) // Se ha movido
