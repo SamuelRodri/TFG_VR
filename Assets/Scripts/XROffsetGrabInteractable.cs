@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -75,10 +76,10 @@ namespace TFG.Behaviour
             }
 
             cartel.SetActive(true);
-            //relativePosition = interactor.transform.InverseTransformPoint(transform.position);
-            //relativeRotation = Quaternion.Inverse(interactor.transform.rotation) * transform.rotation;
+            relativePosition = interactor.transform.InverseTransformPoint(transform.position);
+            relativeRotation = Quaternion.Inverse(interactor.transform.rotation) * transform.rotation;
 
-            base.OnSelectEntering(args);
+            //base.OnSelectEntering(args);
         }
 
         protected override void OnSelectExited(SelectExitEventArgs args)
@@ -92,14 +93,28 @@ namespace TFG.Behaviour
 
         private void Update()
         {
-            //if (isGrabbed)
-            //{
-            //    var interactor = cube;
-            //    Vector3 target = interactor.transform.TransformPoint(relativePosition);
-            //    Quaternion targetRot = interactor.transform.rotation * relativeRotation;
+            if (isGrabbed)
+            {
+                //var interactor = cube;
+                Vector3 targetPosition = interactor.transform.TransformPoint(relativePosition);
+                Quaternion targetRot = interactor.transform.rotation * relativeRotation;
 
-            //    transform.SetPositionAndRotation(target, targetRot);
-            //}
+                var joint = GetComponent<JointComponentGraph>();
+                var hardLimitPosition = joint.hardLimitPosition;
+
+                var prevObject = joint.prevObject;
+                var nextObject = joint.nextObject;
+
+                float prevDistance2 = (prevObject) ? Vector3.Distance(targetPosition, prevObject.transform.position) : 0;
+                float nextDistance2 = (nextObject) ? Vector3.Distance(targetPosition, nextObject.transform.position) : 0;
+
+                float prevDistanceDiff2 = Math.Abs(prevDistance2 - joint.firstPrevDistance);
+                float nextDistanceDiff2 = Math.Abs(nextDistance2 - joint.firstNextDistance);
+
+                if (prevDistanceDiff2 > hardLimitPosition || nextDistanceDiff2 > hardLimitPosition) return;
+
+                transform.SetPositionAndRotation(targetPosition, targetRot);
+            }
         }
     }
 }

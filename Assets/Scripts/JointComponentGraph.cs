@@ -15,17 +15,21 @@ public class JointComponentGraph : MonoBehaviour
     private Quaternion relativeRotationPrev;
     private Quaternion relativeRotationNext;
 
-    private float firstPrevDistance;
-    private float firstNextDistance;
+    public float firstPrevDistance;
+    public float firstNextDistance;
 
     private Vector3 lastPost;
 
     private bool isMoved;
 
-    private float softLimitPosition = 0.001f;
+    public float softLimitPosition = 0.001f;
+    public float hardLimitPosition = 0.008f;
 
     private void Start()
     {
+        firstNextDistance = 0;
+        firstPrevDistance = 0;
+
         if (prevObject)
         {
             relativePositionPrev = prevObject.transform.InverseTransformPoint(transform.position);
@@ -74,14 +78,11 @@ public class JointComponentGraph : MonoBehaviour
     public void UpdateTransformToFollowObject(JointComponentGraph objectToFollow)
     {
         if (isMoved || isGrabbed) return;
-        
         (Vector3 relativePos, Quaternion relativeRot) = GetRelativeTransform(objectToFollow);
 
         Vector3 targetPosition = objectToFollow.transform.TransformPoint(relativePos);
         Quaternion targetRotation = objectToFollow.transform.rotation * relativeRot;
 
-        Debug.Log($"Mi prev está en la posicion: {prevObject.transform.position}");
-        Debug.Log($"Y mi target position en: {targetPosition}");
         // Soft Limit
         float prevDistance = (prevObject) ? Vector3.Distance(transform.position, prevObject.transform.position) : 0;
         float nextDistance = (nextObject) ? Vector3.Distance(transform.position, nextObject.transform.position) : 0;
@@ -89,14 +90,25 @@ public class JointComponentGraph : MonoBehaviour
         float prevDistanceDiff = Math.Abs(prevDistance - firstPrevDistance);
         float nextDistanceDiff = Math.Abs(nextDistance - firstNextDistance);
 
-        Debug.Log(prevDistance);
+        float prevDistance2 = (prevObject) ? Vector3.Distance(targetPosition, prevObject.transform.position) : 0;
+        float nextDistance2 = (nextObject) ? Vector3.Distance(targetPosition, nextObject.transform.position) : 0;
 
-        if (prevDistanceDiff > softLimitPosition || nextDistanceDiff > softLimitPosition)
+        float prevDistanceDiff2 = Math.Abs(prevDistance2 - firstPrevDistance);
+        float nextDistanceDiff2 = Math.Abs(nextDistance2 - firstNextDistance);
+
+        // HardLimit
+        if (prevDistanceDiff2 > hardLimitPosition || nextDistanceDiff2 > hardLimitPosition) return;
+
+        if (prevDistanceDiff > softLimitPosition || nextDistanceDiff > softLimitPosition) // SoftLimit
         {
             transform.position = targetPosition;
 
             isMoved = true;
 
+        }
+        else
+        {
+            return;
         }
 
         transform.rotation = targetRotation;
