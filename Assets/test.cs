@@ -17,8 +17,6 @@ public class test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 targetPosition = transform.TransformPoint(relativePosition);
-        float distance = Vector3.Distance(transform.position, objectToFollow.transform.position);
 
     }
 }

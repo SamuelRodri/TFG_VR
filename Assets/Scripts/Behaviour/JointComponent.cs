@@ -25,8 +25,8 @@ namespace TFG.Behaviour
             initialPosition = transform.position;
             initialRotation = transform.rotation;
 
-            if (!gameObject.name.Equals("Axis (C2)")) return;
-            cubeOffset = Quaternion.Inverse(cube.rotation) * transform.rotation;
+            //if (!gameObject.name.Equals("Axis (C2)")) return;
+            //cubeOffset = Quaternion.Inverse(cube.rotation) * transform.rotation;
         }
 
         private void Start()

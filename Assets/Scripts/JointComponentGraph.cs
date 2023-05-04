@@ -19,107 +19,119 @@ public class JointComponentGraph : MonoBehaviour
     public float firstPrevDistance;
     public float firstNextDistance;
 
-    private Vector3 lastPost;
+    private Vector3 lastPosition;
+    private Quaternion lastRotation;
+    private bool beenCalled;
+    private bool canMove;
 
-    private bool isMoved;
+    private float softLimitPosition;
+    private float hardLimitPosition = 0.006f;
 
-    public float softLimitPosition = 0.002f;
-    public float hardLimitPosition = 0.006f;
+    private Vector3 targetPosition;
+
+    private bool a;
+
+    private void Awake()
+    {
+        softLimitPosition = 0.001f;
+    }
 
     private void Start()
     {
         firstNextDistance = 0;
         firstPrevDistance = 0;
 
+        targetPosition = transform.position;
+
         if (prevObject)
         {
             relativePositionPrev = prevObject.transform.InverseTransformPoint(transform.position);
             relativeRotationPrev = Quaternion.Inverse(prevObject.transform.rotation) * transform.rotation;
-            firstPrevDistance = Vector3.Distance(transform.position, prevObject.transform.position);
+            firstPrevDistance = (prevObject.transform.position - transform.position).magnitude;
         }
 
         if (nextObject)
         {
             relativePositionNext = nextObject.transform.InverseTransformPoint(transform.position);
             relativeRotationNext = Quaternion.Inverse(nextObject.transform.rotation) * transform.rotation;
-            firstNextDistance = Vector3.Distance(transform.position, nextObject.transform.position);
+            firstNextDistance = (nextObject.transform.position - transform.position).magnitude;
         }
 
-        lastPost = transform.position;
+        lastPosition = transform.position;
+        lastRotation = transform.rotation;
     }
 
     // Update is called once per frame
     void Update()
     {
         if (!FindObjectOfType<SimulationController>().areJointsActivated) return;
-        if (!isGrabbed) return;
 
-        if(lastPost != transform.position) // Se ha movido
+        if (lastPosition != transform.position || lastRotation != transform.rotation) // Se ha movido
         {
-            if (prevObject) // Si tiene previo hacemos que nos siga
-            {
-                prevObject.UpdateTransformToFollowObject(this);
-            }
+            CallNeighbours(); // Avisamos a mis vecinos para que se muevan
 
-            if (nextObject) // Si tiene siguiente hacemos que nos siga
-            {
-                Debug.Log("Llama a next");
-                nextObject.UpdateTransformToFollowObject(this);
-            }
-
-            lastPost = transform.position;
+            lastPosition = transform.position;
+            lastRotation = transform.rotation;
         }
     }
 
     private void LateUpdate()
     {
-        isMoved = false;
+        beenCalled = false;
+
+    }
+
+    private void CallNeighbours()
+    {
+        if (prevObject) // Si tiene previo hacemos que nos siga
+        {
+            prevObject.UpdateTransformToFollowObject(this);
+        }
+
+        if (nextObject) // Si tiene siguiente hacemos que nos siga
+        {
+            nextObject.UpdateTransformToFollowObject(this);
+        }
     }
 
     // Function to follow the position and rotation of an object
     public void UpdateTransformToFollowObject(JointComponentGraph objectToFollow)
     {
-        if (isMoved || isGrabbed) return;
-        (Vector3 relativePos, Quaternion relativeRot) = GetRelativeTransform(objectToFollow);
-
-        Vector3 targetPosition = objectToFollow.transform.TransformPoint(relativePos);
-        Quaternion targetRotation = objectToFollow.transform.rotation * relativeRot;
-
-        // Soft Limit
-        float prevDistance = (prevObject) ? Vector3.Distance(transform.position, prevObject.transform.position) : 0;
-        float nextDistance = (nextObject) ? Vector3.Distance(transform.position, nextObject.transform.position) : 0;
-
-        float prevDistanceDiff = Math.Abs(prevDistance - firstPrevDistance);
-        float nextDistanceDiff = Math.Abs(nextDistance - firstNextDistance);
-
-        float prevDistance2 = (prevObject) ? Vector3.Distance(targetPosition, prevObject.transform.position) : 0;
-        float nextDistance2 = (nextObject) ? Vector3.Distance(targetPosition, nextObject.transform.position) : 0;
-
-        float prevDistanceDiff2 = Math.Abs(prevDistance2 - firstPrevDistance);
-        float nextDistanceDiff2 = Math.Abs(nextDistance2 - firstNextDistance);
-
-        // HardLimit
-        //if (prevDistanceDiff2 > hardLimitPosition || nextDistanceDiff2 > hardLimitPosition) return;
-
-        if (prevDistanceDiff > softLimitPosition || nextDistanceDiff > softLimitPosition) // SoftLimit
-        {
-            transform.position = targetPosition;
-
-            isMoved = true;
-
-        }
-        else
+        if (beenCalled || isGrabbed) // Si ya se ha movido en este frame o está agarrado no se mueve
         {
             return;
         }
-
-        transform.rotation = targetRotation;
-
         
-        JointComponentGraph neighbor = (nextObject && objectToFollow != nextObject) ? nextObject :
-                                        (prevObject && objectToFollow != prevObject) ? prevObject : null;
+        if (CheckSoftLimitPosition(objectToFollow))
+        {
+            (Vector3 relativePos, Quaternion relativeRot) = GetRelativeTransform(objectToFollow);
 
-        if (neighbor) neighbor.UpdateTransformToFollowObject(this);
+            targetPosition = objectToFollow.transform.TransformPoint(relativePos);
+            
+            Quaternion targetRotation = objectToFollow.transform.rotation * relativeRot;
+
+            Vector3 dir = objectToFollow.transform.position - transform.position;
+            float distance = dir.magnitude;
+            dir.Normalize();
+
+            if(distance > softLimitPosition)
+            {
+                transform.position += dir * (distance - softLimitPosition);
+            }
+            //else if (distance < 0.001)
+            //{
+            //    transform.position += dir * (distance - 0.001f);
+            //}
+
+            transform.rotation = targetRotation;
+            canMove = true;
+            beenCalled = true;
+            CallNeighbours();
+        }
+        else
+        {
+            canMove = false;
+        }
     }
 
     // Funcion que devuelve la posicion y rotacion relativa en funcion del vecino que llama
@@ -131,15 +143,16 @@ public class JointComponentGraph : MonoBehaviour
         return (relativePos, relativeRot);
     }
 
-    private void UpdateRelativeTransform(JointComponentGraph objectToFollow)
+    // Funcion que comprueba el softlimit para moverse
+    private bool CheckSoftLimitPosition(JointComponentGraph objectToFollow)
     {
-        if(objectToFollow == prevObject)
-        {
-            relativePositionPrev = prevObject.transform.InverseTransformPoint(transform.position);
-        }
-        else if(objectToFollow == nextObject)
-        {
-            relativePositionNext = nextObject.transform.InverseTransformPoint(transform.position);
-        }
+        float distance = Vector3.Distance(transform.position, objectToFollow.transform.position);
+        float firstDistance = (objectToFollow == prevObject) ? firstPrevDistance : firstNextDistance;
+
+        float distanceDiff = Math.Abs(distance - firstDistance);
+        
+        var move = (distanceDiff > softLimitPosition);
+        
+        return move;
     }
 }
