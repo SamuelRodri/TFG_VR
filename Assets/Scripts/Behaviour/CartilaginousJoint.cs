@@ -40,8 +40,8 @@ namespace TFG.Behaviour
         {
             InitializeJoints();
 
-            controller.OnBreak += BreakLinks;
-            controller.OnRestore += RestoreLinks;
+            SimulationController.OnBreak += BreakLinks;
+            SimulationController.OnRestore += RestoreLinks;
         }
 
         private void InitializeJoints()

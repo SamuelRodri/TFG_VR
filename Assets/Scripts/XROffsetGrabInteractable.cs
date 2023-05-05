@@ -46,6 +46,7 @@ public class XROffsetGrabInteractable : XRGrabInteractable
 
     protected override void OnSelectEntering(SelectEnterEventArgs args)
     {
+        Debug.Log("AGARRAS");
         interactor = args.interactorObject;
         isGrabbed = true;
         if (interactor is XRDirectInteractor)
@@ -72,6 +73,7 @@ public class XROffsetGrabInteractable : XRGrabInteractable
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
+        Debug.Log("Sueltas");
         cartel.SetActive(false);
         isGrabbed = false;
         base.OnSelectExited(args);

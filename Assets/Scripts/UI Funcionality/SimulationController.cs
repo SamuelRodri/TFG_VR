@@ -6,10 +6,10 @@ namespace TFG.Behaviour
     public class SimulationController : MonoBehaviour
     {
         public delegate void BreakJoints();
-        public event BreakJoints OnBreak;
+        public static event BreakJoints OnBreak;
 
         public delegate void RestoreJoints();
-        public event RestoreJoints OnRestore;
+        public static event RestoreJoints OnRestore;
 
         public bool areJointsActivated = true;
 
@@ -38,11 +38,10 @@ namespace TFG.Behaviour
 
                 if (component.GetComponent<CartilaginousJoint>())
                 {
-                    Debug.Log("Restaura");
                     component.GetComponent<CartilaginousJoint>().RestoreLinks();
                 }
 
-                areJointsActivated = true;
+                RestoreJointsPress();
             }
         }
     }

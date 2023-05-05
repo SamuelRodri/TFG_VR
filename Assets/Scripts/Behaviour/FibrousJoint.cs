@@ -19,10 +19,8 @@ namespace TFG.Behaviour
             prevJoint = GetComponentsInChildren<ConfigurableJoint>()[0];
             nextJoint = GetComponentsInChildren<ConfigurableJoint>()[1];
 
-            controller = GameObject.Find("SimulationController").GetComponent<SimulationController>();
-
-            controller.OnBreak += BreakLinks;
-            controller.OnRestore += RestoreLinks;
+            SimulationController.OnBreak += BreakLinks;
+            SimulationController.OnRestore += RestoreLinks;
         }
 
         public void RestoreLinks()

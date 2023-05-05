@@ -8,8 +8,8 @@ namespace TFG.Behaviour
     public class JointComponent : MonoBehaviour
     {
         // Previous and Next component
-        private JointComponent prev;
-        private JointComponent next;
+        public JointComponent prev;
+        public JointComponent next;
 
         private Vector3 rotation;
         public Transform cube;
@@ -19,7 +19,6 @@ namespace TFG.Behaviour
         private Vector3 initialPosition;
         private Quaternion initialRotation;
 
-        static int i = 0;
         private void Awake()
         {
             initialPosition = transform.position;
@@ -31,7 +30,7 @@ namespace TFG.Behaviour
 
         private void Start()
         {
-            GameObject.Find("SimulationController").GetComponent<SimulationController>().OnRestore += Reset;
+            SimulationController.OnRestore += Reset;
         }
         public void SetPrev(JointComponent p)
         {
@@ -53,7 +52,6 @@ namespace TFG.Behaviour
 
         private void Update()
         {
-            i+=1;
             if (GetComponent<XROffsetGrabInteractable>().isGrabbed) // The object is beign grabed
             {
                 var rot = GetComponent<XROffsetGrabInteractable>().interactor.transform.rotation * GetComponent<XROffsetGrabInteractable>().offset;
