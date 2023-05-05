@@ -8,8 +8,8 @@ namespace TFG.Behaviour
     public class JointComponent : MonoBehaviour
     {
         // Previous and Next component
-        public JointComponent prev;
-        public JointComponent next;
+        private JointComponent prev;
+        private JointComponent next;
 
         private Vector3 rotation;
         public Transform cube;
