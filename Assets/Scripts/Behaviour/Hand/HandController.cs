@@ -19,6 +19,8 @@ namespace TFG.Behaviour.Hand
         public HandType handType;
         private float _gripValue, _triggerValue;
         private bool _isGrabbing;
+        public GameObject grabbedObject;
+
 
         // Getters
         public float GripValue { get => _gripValue; }
@@ -46,8 +48,15 @@ namespace TFG.Behaviour.Hand
 
         protected override void OnSelectEntered(SelectEnterEventArgs args)
         {
+            grabbedObject = args.interactableObject.transform.gameObject;
             information.text = args.interactableObject.transform.name;
             base.OnSelectEntered(args);
+        }
+
+        protected override void OnSelectExited(SelectExitEventArgs args)
+        {
+            grabbedObject = null;
+            base.OnSelectExited(args);
         }
     }
 }
