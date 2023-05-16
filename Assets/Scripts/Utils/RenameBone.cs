@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TFG.Behaviour;
 using UnityEngine;
 
 namespace TFG.Utils
@@ -11,6 +12,18 @@ namespace TFG.Utils
         public void Rename()
         {
             name = parent.name + " - " + name;
+        }
+
+        public void AddJointComponent()
+        {
+            var initialTransform = transform;
+
+            transform.gameObject.AddComponent<JointComponent>();
+            
+            transform.position = initialTransform.position;
+            transform.rotation = initialTransform.rotation;
+            transform.localScale = initialTransform.localScale;
+            
         }
     }
 }

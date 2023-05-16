@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TFG.Utils;
 using UnityEngine;
 
 namespace TFG.Behaviour
@@ -30,7 +31,7 @@ namespace TFG.Behaviour
 
         private void Start()
         {
-            SimulationController.OnRestore += Reset;
+            SimulationController.OnRestore += ResetTransform;
         }
         public void SetPrev(JointComponent p)
         {
@@ -44,11 +45,6 @@ namespace TFG.Behaviour
 
         public bool HasPrev() { return prev != null; }
         public bool HasNext() { return next != null; }
-
-        public void Reset()
-        {
-            transform.SetPositionAndRotation(initialPosition, initialRotation);
-        }
 
         private void Update()
         {
@@ -134,6 +130,11 @@ namespace TFG.Behaviour
         public static float NormalizeAngle(float angle)
         {
             return Mathf.DeltaAngle(angle, 0f);
+        }
+
+        public void ResetTransform()
+        {
+            transform.SetPositionAndRotation(initialPosition, initialRotation);
         }
     }
 }
