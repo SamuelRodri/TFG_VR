@@ -10,11 +10,6 @@ namespace TFG.Behaviour.Hand
         private Animator animator;
         private HandController controller;
 
-        [Range(0, 1)]
-        public float grip;
-        [Range(0, 1)]
-        public float trigger;
-
         private void Awake()
         {
             animator = GetComponent<Animator>();
@@ -23,9 +18,8 @@ namespace TFG.Behaviour.Hand
 
         private void Update()
         {
-            //SetAnimFloats(grip, trigger);
             SetAnimFloats(controller.GripValue, controller.TriggerValue);
-            //if (!controller.IsGrabbing) animator.enabled = true;
+            if (!controller.IsGrabbing) animator.enabled = true;
         }
 
         // Set floats to blendtree
@@ -41,7 +35,7 @@ namespace TFG.Behaviour.Hand
 
         private void OnTriggerEnter(Collider other)
         {
-            //if (controller.IsGrabbing) animator.enabled = false;
+            if (controller.IsGrabbing) animator.enabled = false;
         }
     }
 }
