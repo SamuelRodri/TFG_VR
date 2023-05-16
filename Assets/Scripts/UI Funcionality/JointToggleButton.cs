@@ -15,6 +15,16 @@ namespace TFG.UI
 
         [SerializeField] SimulationController controller;
 
+        private void Start()
+        {
+            SimulationController.OnRestore += RestoreButtonImage;
+        }
+
+        private void RestoreButtonImage()
+        {
+            GetComponent<Image>().sprite = enabledSprite;
+        }
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Controller"))
