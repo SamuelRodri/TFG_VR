@@ -64,14 +64,11 @@ namespace TFG.Behaviour.Hand
         {
             if (!isGrabing || grip < actualGrip || trigger < actualTrigger)
             {
-                var newGrip = Mathf.Lerp(actualGrip, grip, 0.1f);
-                var newTrigger = Mathf.Lerp(actualTrigger, trigger, 0.1f);
+                parentAnimator.SetFloat(gripParemeter, Mathf.Lerp(actualGrip, grip, 0.5f));
+                parentAnimator.SetFloat(triggerParemeter, Mathf.Lerp(actualTrigger, trigger, 0.5f));
 
-                parentAnimator.SetFloat(gripParemeter, newGrip);
-                parentAnimator.SetFloat(triggerParemeter, newTrigger);
-
-                actualGrip = newGrip;
-                actualTrigger = newTrigger;
+                actualGrip = grip;
+                actualTrigger = trigger;
             }
         }
     }
