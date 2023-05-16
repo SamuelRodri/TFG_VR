@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1182b87dfb889af4f9d88174542d42c0
+=======
+guid: 348d5f4d1af08ec489117b4728ff8338
+>>>>>>> parent of 3a9b68d (Refactor y archivos no usados borrados !)
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
