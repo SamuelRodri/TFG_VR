@@ -19,11 +19,6 @@ namespace TFG.Utils
             {
                 myScript.Rename();
             }
-
-            if (GUILayout.Button("Execute2"))
-            {
-                myScript.AddJointComponent();
-            }
         }
     }
 }

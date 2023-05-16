@@ -12,6 +12,8 @@ namespace TFG.Behaviour
         {
             if (!areJointsActivated) return;
 
+            Debug.Log("Se rompe");
+
             var joints = Object.FindObjectsOfType<CartilaginousJoint>();
 
             foreach (var joint in joints)

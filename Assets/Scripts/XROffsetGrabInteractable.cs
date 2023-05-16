@@ -17,7 +17,7 @@ public class XROffsetGrabInteractable : XRGrabInteractable
     private Vector3 controllerDiff;
     public Vector3 vertebraDiff;
 
-    //public RotationController rc;
+    public RotationController rc;
 
     public Vector3 rotation;
 
@@ -41,12 +41,11 @@ public class XROffsetGrabInteractable : XRGrabInteractable
 
         initialAttachLocalPos = attachTransform.localPosition;
         initialAttachLocalRot = attachTransform.localRotation;
-        //rc = GameObject.Find("RotationController").GetComponent<RotationController>();
+        rc = GameObject.Find("RotationController").GetComponent<RotationController>();
     }
 
     protected override void OnSelectEntering(SelectEnterEventArgs args)
     {
-        Debug.Log("AGARRAS");
         interactor = args.interactorObject;
         isGrabbed = true;
         if (interactor is XRDirectInteractor)
@@ -73,7 +72,6 @@ public class XROffsetGrabInteractable : XRGrabInteractable
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
-        Debug.Log("Sueltas");
         cartel.SetActive(false);
         isGrabbed = false;
         base.OnSelectExited(args);

@@ -34,7 +34,7 @@ namespace TFG.Behaviour
 
             foreach(var component in jointComponents)
             {
-                component.ResetTransform();
+                component.Reset();
 
                 if (component.GetComponent<CartilaginousJoint>())
                 {
