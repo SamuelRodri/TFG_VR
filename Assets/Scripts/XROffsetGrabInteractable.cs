@@ -17,7 +17,7 @@ public class XROffsetGrabInteractable : XRGrabInteractable
     private Vector3 controllerDiff;
     public Vector3 vertebraDiff;
 
-    public RotationController rc;
+    //public RotationController rc;
 
     public Vector3 rotation;
 
@@ -41,7 +41,7 @@ public class XROffsetGrabInteractable : XRGrabInteractable
 
         initialAttachLocalPos = attachTransform.localPosition;
         initialAttachLocalRot = attachTransform.localRotation;
-        rc = GameObject.Find("RotationController").GetComponent<RotationController>();
+        //rc = GameObject.Find("RotationController").GetComponent<RotationController>();
     }
 
     protected override void OnSelectEntering(SelectEnterEventArgs args)
