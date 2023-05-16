@@ -25,8 +25,12 @@ namespace TFG.Behaviour.Hand
         // Set floats to blendtree
         public void SetAnimFloats(float gripValue, float triggerValue)
         {
-           animator.SetFloat("Grip", gripValue);
-           animator.SetFloat("Trigger", triggerValue);
+            var phalanxs = GetComponentsInChildren<Phalanx>();
+
+            foreach(Phalanx p in phalanxs)
+            {
+                p.SetAnimFloats(gripValue, triggerValue);
+            }
         }
 
         private void OnTriggerEnter(Collider other)
