@@ -14,9 +14,17 @@ namespace TFG.Behaviour
 
         private void Start()
         {
+            initialPosition = transform.position;
+            initialRotation = transform.rotation;
             parentVertebra = transform.parent.gameObject;
             SimulationController.OnBreak += ChangeParent;
             SimulationController.OnRestore += ChangeParent;
+            SimulationController.OnRestore += ResetTransform;
+        }
+
+        public void ResetTransform()
+        {
+            transform.SetPositionAndRotation(initialPosition, initialRotation);
         }
 
         private void ChangeParent()

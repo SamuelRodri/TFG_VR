@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/JointComponentGraph.cs.meta
 guid: 456f609ac198b0740bc95e6c0e1e5dd6
+========
+guid: d080d1ed684413540825ebf444be99e6
+>>>>>>>> parent of 3a9b68d (Refactor y archivos no usados borrados !):Assets/Scripts/JointComponent3.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

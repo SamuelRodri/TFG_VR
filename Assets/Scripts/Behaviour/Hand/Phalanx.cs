@@ -11,7 +11,13 @@ namespace TFG.Behaviour.Hand
         public bool isGrabing;
 
         private Animator parentAnimator;
+        private HandController hand;
+
         private int layerIndex;
+
+        public float actualGrip;
+        public float actualTrigger;
+        private GameObject grabbedObject;
 
         [SerializeField] string parameterToStop;
         [SerializeField] string gripParemeter;
@@ -22,43 +28,50 @@ namespace TFG.Behaviour.Hand
             controller = GetComponentInParent<HandController>();
             parentAnimator = GetComponentInParent<Animator>();
             layerIndex = parentAnimator.GetLayerIndex(layerName);
-        }
-        // Start is called before the first frame update
-        void Start()
-        {
-            
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            if (!isGrabing && parentAnimator.GetLayerWeight(layerIndex) == 0)
-            {
-                Debug.Log("resetea");
-                //parentAnimator.SetLayerWeight(layerIndex, 1f);
-            }
+            hand = GetComponentInParent<HandController>();
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log("Triggerea");
-            Animator parentAnimator = GetComponentInParent<Animator>();
-            AnimatorStateInfo stateInfo = parentAnimator.GetCurrentAnimatorStateInfo(0);
-
-            isGrabing = true;
+            if (other.gameObject == hand.grabbedObject || other.transform.parent.gameObject == hand.grabbedObject)
+            {
+                Debug.Log($"{name}: Entras en contacto con el objeto agarrado");
+                isGrabing = true;
+                grabbedObject = hand.grabbedObject;
+            }
         }
 
-        private void OnTriggerExit(Collider other)
+        private void OnTriggerStay(Collider other)
         {
-            isGrabing = false;
+            if (other.gameObject == hand.grabbedObject || other.transform.parent.gameObject == hand.grabbedObject)
+            {
+                isGrabing = true;
+                grabbedObject = hand.grabbedObject;
+            }
+        }
+
+        private void Update()
+        {
+            if (!hand.grabbedObject && grabbedObject)
+            {
+                Debug.Log($"DEJAS DE AGARRAR CON: {name}");
+                isGrabing = false;
+                grabbedObject = null;
+            }
         }
 
         public void SetAnimFloats(float grip, float trigger)
         {
-            if (!isGrabing)
+            if (!isGrabing || grip < actualGrip || trigger < actualTrigger)
             {
-                parentAnimator.SetFloat(gripParemeter, grip);
-                parentAnimator.SetFloat(triggerParemeter, trigger);
+                var newGrip = Mathf.Lerp(actualGrip, grip, 0.1f);
+                var newTrigger = Mathf.Lerp(actualTrigger, trigger, 0.1f);
+
+                parentAnimator.SetFloat(gripParemeter, newGrip);
+                parentAnimator.SetFloat(triggerParemeter, newTrigger);
+
+                actualGrip = newGrip;
+                actualTrigger = newTrigger;
             }
         }
     }

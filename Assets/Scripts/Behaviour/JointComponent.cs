@@ -30,7 +30,7 @@ namespace TFG.Behaviour
 
         private void Start()
         {
-            SimulationController.OnRestore += Reset;
+            SimulationController.OnRestore += ResetTransform;
         }
         public void SetPrev(JointComponent p)
         {
@@ -45,7 +45,7 @@ namespace TFG.Behaviour
         public bool HasPrev() { return prev != null; }
         public bool HasNext() { return next != null; }
 
-        public void Reset()
+        public void ResetTransform()
         {
             transform.SetPositionAndRotation(initialPosition, initialRotation);
         }
