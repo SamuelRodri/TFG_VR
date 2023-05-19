@@ -11,7 +11,7 @@ namespace TFG.Behaviour
         public delegate void RestoreJoints();
         public static event RestoreJoints OnRestore;
 
-        public bool areJointsActivated = true;
+        public static bool areJointsActivated = true;
 
         public void BreakJointsPress()
         {

@@ -62,7 +62,7 @@ public class XROffsetGrabInteractable : XRGrabInteractable
         offset = Quaternion.Inverse(interactor.transform.rotation) * transform.rotation;
         positionOffset = transform.position - interactor.transform.position;
 
-        if (!FindObjectOfType<SimulationController>().areJointsActivated)
+        if (SimulationController.areJointsActivated)
         {
             cartel.SetActive(true);
         }

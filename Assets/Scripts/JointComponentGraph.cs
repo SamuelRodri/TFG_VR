@@ -64,7 +64,7 @@ public class JointComponentGraph : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!FindObjectOfType<SimulationController>().areJointsActivated) return;
+        if (SimulationController.areJointsActivated) return;
 
         if (lastPosition != transform.position || lastRotation != transform.rotation) // Se ha movido
         {

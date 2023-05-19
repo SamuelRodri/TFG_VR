@@ -68,7 +68,7 @@ namespace TFG.Behaviour
             //}
             else
             {
-                if (GameObject.Find("SimulationController").GetComponent<SimulationController>().areJointsActivated)
+                if (SimulationController.areJointsActivated)
                 {
                     #region Rotation
                     Quaternion prevRot = transform.rotation;
