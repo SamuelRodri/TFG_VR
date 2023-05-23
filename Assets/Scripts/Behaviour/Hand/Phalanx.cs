@@ -35,7 +35,6 @@ namespace TFG.Behaviour.Hand
         {
             if (other.gameObject == hand.grabbedObject || other.transform.parent.gameObject == hand.grabbedObject)
             {
-                Debug.Log($"{name}: Entras en contacto con el objeto agarrado");
                 isGrabing = true;
                 grabbedObject = hand.grabbedObject;
             }
@@ -54,7 +53,6 @@ namespace TFG.Behaviour.Hand
         {
             if (!hand.grabbedObject && grabbedObject)
             {
-                Debug.Log($"DEJAS DE AGARRAR CON: {name}");
                 isGrabing = false;
                 grabbedObject = null;
             }

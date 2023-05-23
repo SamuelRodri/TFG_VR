@@ -26,9 +26,9 @@ namespace TFG.Behaviour.Controllers
 
         public void RestoreColumn()
         {
-            var jointComponents = Object.FindObjectsOfType<JointComponent>();
+            JointComponent[] jointComponents = FindObjectsOfType<JointComponent>();
 
-            foreach(var component in jointComponents)
+            foreach(JointComponent component in jointComponents)
             {
                 component.ResetTransform();
 

@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TFG.Behaviour;
 using TFG.Behaviour.Controllers;
+using TFG.Behaviour.Extras;
 using TMPro;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 namespace TFG.Behaviour.VR
 {
+    [RequireComponent(typeof(InfoBoardEntity))]
     public class XROffsetGrabInteractable : XRGrabInteractable
     {
         private Vector3 initialAttachLocalPos;
@@ -22,16 +24,9 @@ namespace TFG.Behaviour.VR
 
         public Vector3 rotation;
 
-        [SerializeField] GameObject cartel;
-        [SerializeField] TMP_Text information;
-
         // Start is called before the first frame update
         void Start()
         {
-            cartel = transform.GetChild(0).gameObject;
-            information = cartel.transform.GetChild(0).transform.GetChild(0).GetComponent<TMP_Text>();
-            information.text = name;
-
             // Create attach point
             if (!attachTransform)
             {
@@ -64,7 +59,7 @@ namespace TFG.Behaviour.VR
 
             if (!SimulationController.areJointsActivated)
             {
-                cartel.SetActive(true);
+                GetComponent<InfoBoardEntity>().SetBoardActive();
             }
 
             base.OnSelectEntering(args);
@@ -72,7 +67,7 @@ namespace TFG.Behaviour.VR
 
         protected override void OnSelectExited(SelectExitEventArgs args)
         {
-            cartel.SetActive(false);
+            GetComponent<InfoBoardEntity>().SetBoardInactive();
             isGrabbed = false;
             base.OnSelectExited(args);
         }

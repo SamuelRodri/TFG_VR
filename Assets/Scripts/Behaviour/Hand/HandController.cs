@@ -15,12 +15,10 @@ namespace TFG.Behaviour.Hand
 
     public class HandController : XRDirectInteractor
     {
-
         public HandType handType;
         private float _gripValue, _triggerValue;
         private bool _isGrabbing;
         public GameObject grabbedObject;
-
 
         // Getters
         public float GripValue { get => _gripValue; }

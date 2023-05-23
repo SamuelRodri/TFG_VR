@@ -25,23 +25,17 @@ namespace TFG.Behaviour.Hand
         {
             //SetAnimFloats(grip, trigger);
             SetAnimFloats(controller.GripValue, controller.TriggerValue);
-            //if (!controller.IsGrabbing) animator.enabled = true;
         }
 
         // Set floats to blendtree
         public void SetAnimFloats(float gripValue, float triggerValue)
         {
-            var phalanxs = GetComponentsInChildren<Phalanx>();
+            Phalanx[] phalanxs = GetComponentsInChildren<Phalanx>();
 
             foreach (Phalanx p in phalanxs)
             {
                 p.SetAnimFloats(gripValue, triggerValue);
             }
-        }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            //if (controller.IsGrabbing) animator.enabled = false;
         }
     }
 }

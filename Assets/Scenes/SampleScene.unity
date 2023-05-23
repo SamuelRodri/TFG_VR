@@ -640,6 +640,7 @@ GameObject:
   - component: {fileID: 12085105}
   - component: {fileID: 12085106}
   - component: {fileID: 12085107}
+  - component: {fileID: 12085109}
   m_Layer: 0
   m_Name: Intervertebral disc L4-L5
   m_TagString: Untagged
@@ -1110,7 +1111,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &12085109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12085094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &15184079
 GameObject:
@@ -1709,6 +1722,7 @@ GameObject:
   - component: {fileID: 23968585}
   - component: {fileID: 23968583}
   - component: {fileID: 23968588}
+  - component: {fileID: 23968589}
   m_Layer: 0
   m_Name: Vertebra L4
   m_TagString: Untagged
@@ -1952,7 +1966,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &23968589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23968581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &25864562
 GameObject:
@@ -6133,6 +6159,7 @@ GameObject:
   - component: {fileID: 139946975}
   - component: {fileID: 139946976}
   - component: {fileID: 139946977}
+  - component: {fileID: 139946979}
   m_Layer: 0
   m_Name: Intervertebral disc T3-T4
   m_TagString: Untagged
@@ -6603,7 +6630,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &139946979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139946964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &141695087
 GameObject:
@@ -6741,6 +6780,7 @@ GameObject:
   - component: {fileID: 151136839}
   - component: {fileID: 151136840}
   - component: {fileID: 151136841}
+  - component: {fileID: 151136843}
   m_Layer: 0
   m_Name: Intervertebral disc C7-T1
   m_TagString: Untagged
@@ -7211,7 +7251,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &151136843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151136828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &152277284
 GameObject:
@@ -7315,6 +7367,7 @@ GameObject:
   - component: {fileID: 154958183}
   - component: {fileID: 154958184}
   - component: {fileID: 154958185}
+  - component: {fileID: 154958187}
   m_Layer: 0
   m_Name: Intervertebral disc T6-T7
   m_TagString: Untagged
@@ -7785,7 +7838,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &154958187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154958172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &156443683
 GameObject:
@@ -7801,6 +7866,7 @@ GameObject:
   - component: {fileID: 156443687}
   - component: {fileID: 156443685}
   - component: {fileID: 156443690}
+  - component: {fileID: 156443691}
   m_Layer: 0
   m_Name: Vertebra T5
   m_TagString: Untagged
@@ -8044,7 +8110,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &156443691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156443683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &160981596
 GameObject:
@@ -9295,6 +9373,7 @@ GameObject:
   - component: {fileID: 198728880}
   - component: {fileID: 198728881}
   - component: {fileID: 198728882}
+  - component: {fileID: 198728884}
   m_Layer: 0
   m_Name: Intervertebral disc C2-C3
   m_TagString: Untagged
@@ -9765,7 +9844,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &198728884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198728869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &200135260
 GameObject:
@@ -13084,6 +13175,7 @@ GameObject:
   - component: {fileID: 322054843}
   - component: {fileID: 322054841}
   - component: {fileID: 322054846}
+  - component: {fileID: 322054847}
   m_Layer: 0
   m_Name: Vertebra T4
   m_TagString: Untagged
@@ -13327,7 +13419,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &322054847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322054839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &322953484
 GameObject:
@@ -13829,6 +13933,7 @@ GameObject:
   - component: {fileID: 339475114}
   - component: {fileID: 339475115}
   - component: {fileID: 339475116}
+  - component: {fileID: 339475118}
   m_Layer: 0
   m_Name: Intervertebral disc T5-T6
   m_TagString: Untagged
@@ -14299,7 +14404,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &339475118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339475103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &342490924
 GameObject:
@@ -14533,6 +14650,7 @@ GameObject:
   - component: {fileID: 356073503}
   - component: {fileID: 356073501}
   - component: {fileID: 356073506}
+  - component: {fileID: 356073507}
   m_Layer: 0
   m_Name: Vertebra T8
   m_TagString: Untagged
@@ -14776,7 +14894,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &356073507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356073499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &356106743
 GameObject:
@@ -15124,6 +15254,7 @@ GameObject:
   - component: {fileID: 365885189}
   - component: {fileID: 365885187}
   - component: {fileID: 365885192}
+  - component: {fileID: 365885193}
   m_Layer: 0
   m_Name: Vertebra C7
   m_TagString: Untagged
@@ -15367,7 +15498,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &365885193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365885185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &366854754
 GameObject:
@@ -17974,6 +18117,7 @@ GameObject:
   - component: {fileID: 474654000}
   - component: {fileID: 474654001}
   - component: {fileID: 474654002}
+  - component: {fileID: 474654004}
   m_Layer: 0
   m_Name: Intervertebral disc C3-C4
   m_TagString: Untagged
@@ -18444,7 +18588,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &474654004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474653989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &480277940
 GameObject:
@@ -19533,6 +19689,7 @@ GameObject:
   - component: {fileID: 491638180}
   - component: {fileID: 491638178}
   - component: {fileID: 491638183}
+  - component: {fileID: 491638184}
   m_Layer: 0
   m_Name: Vertebra T10
   m_TagString: Untagged
@@ -19776,7 +19933,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &491638184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491638176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &497809932
 GameObject:
@@ -21606,6 +21775,7 @@ GameObject:
   - component: {fileID: 572278740}
   - component: {fileID: 572278741}
   - component: {fileID: 572278742}
+  - component: {fileID: 572278744}
   m_Layer: 0
   m_Name: Intervertebral disc T8-T9
   m_TagString: Untagged
@@ -22076,7 +22246,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &572278744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572278729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &572878866
 GameObject:
@@ -23716,6 +23898,7 @@ GameObject:
   - component: {fileID: 622710819}
   - component: {fileID: 622710817}
   - component: {fileID: 622710822}
+  - component: {fileID: 622710823}
   m_Layer: 0
   m_Name: Vertebra L1
   m_TagString: Untagged
@@ -23959,7 +24142,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &622710823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622710815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &622958986
 GameObject:
@@ -23980,6 +24175,7 @@ GameObject:
   - component: {fileID: 622958998}
   - component: {fileID: 622958999}
   - component: {fileID: 622959000}
+  - component: {fileID: 622959002}
   m_Layer: 0
   m_Name: Intervertebral disc C5-C6
   m_TagString: Untagged
@@ -24450,7 +24646,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &622959002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622958986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &623065517
 GameObject:
@@ -26994,6 +27202,7 @@ GameObject:
   - component: {fileID: 695203034}
   - component: {fileID: 695203035}
   - component: {fileID: 695203036}
+  - component: {fileID: 695203038}
   m_Layer: 0
   m_Name: Intervertebral disc T1-T2
   m_TagString: Untagged
@@ -27464,7 +27673,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &695203038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695203023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &699144039
 GameObject:
@@ -28878,6 +29099,7 @@ GameObject:
   - component: {fileID: 745136007}
   - component: {fileID: 745136008}
   - component: {fileID: 745136009}
+  - component: {fileID: 745136010}
   m_Layer: 0
   m_Name: Occipital bone
   m_TagString: Untagged
@@ -29144,7 +29366,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &745136010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745136000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &749737449
 GameObject:
@@ -29469,6 +29703,7 @@ GameObject:
   - component: {fileID: 753422747}
   - component: {fileID: 753422745}
   - component: {fileID: 753422750}
+  - component: {fileID: 753422751}
   m_Layer: 0
   m_Name: Vertebra T2
   m_TagString: Untagged
@@ -29712,7 +29947,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &753422751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753422743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &762837585
 GameObject:
@@ -29766,6 +30013,7 @@ GameObject:
   - component: {fileID: 765381407}
   - component: {fileID: 765381408}
   - component: {fileID: 765381409}
+  - component: {fileID: 765381411}
   m_Layer: 0
   m_Name: Intervertebral disc T10-T11
   m_TagString: Untagged
@@ -30236,7 +30484,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &765381411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765381396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &770727934
 GameObject:
@@ -32137,6 +32397,7 @@ GameObject:
   - component: {fileID: 831006904}
   - component: {fileID: 831006905}
   - component: {fileID: 831006906}
+  - component: {fileID: 831006908}
   m_Layer: 0
   m_Name: Intervertebral disc T11-T12
   m_TagString: Untagged
@@ -32607,7 +32868,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &831006908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831006893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &832553299
 GameObject:
@@ -32623,6 +32896,7 @@ GameObject:
   - component: {fileID: 832553303}
   - component: {fileID: 832553301}
   - component: {fileID: 832553307}
+  - component: {fileID: 832553308}
   m_Layer: 0
   m_Name: Vertebra C3
   m_TagString: Untagged
@@ -32866,7 +33140,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &832553308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832553299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &833372860
 GameObject:
@@ -33208,6 +33494,7 @@ GameObject:
   - component: {fileID: 846206421}
   - component: {fileID: 846206422}
   - component: {fileID: 846206423}
+  - component: {fileID: 846206424}
   m_Layer: 0
   m_Name: Atlas (C1)
   m_TagString: Untagged
@@ -33585,7 +33872,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &846206424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846206412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &848265309
 GameObject:
@@ -33857,6 +34156,7 @@ GameObject:
   - component: {fileID: 855810852}
   - component: {fileID: 855810853}
   - component: {fileID: 855810854}
+  - component: {fileID: 855810856}
   m_Layer: 0
   m_Name: Intervertebral disc L5-S1
   m_TagString: Untagged
@@ -34327,7 +34627,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &855810856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855810841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &857764080
 GameObject:
@@ -34843,6 +35155,7 @@ GameObject:
   - component: {fileID: 863261571}
   - component: {fileID: 863261569}
   - component: {fileID: 863261574}
+  - component: {fileID: 863261575}
   m_Layer: 0
   m_Name: Vertebra T12
   m_TagString: Untagged
@@ -35086,7 +35399,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &863261575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863261567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &863388202
 GameObject:
@@ -38204,6 +38529,7 @@ GameObject:
   - component: {fileID: 941224614}
   - component: {fileID: 941224612}
   - component: {fileID: 941224617}
+  - component: {fileID: 941224618}
   m_Layer: 0
   m_Name: Vertebra T11
   m_TagString: Untagged
@@ -38447,7 +38773,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &941224618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941224610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &941683886
 GameObject:
@@ -38582,6 +38920,7 @@ GameObject:
   - component: {fileID: 941720109}
   - component: {fileID: 941720110}
   - component: {fileID: 941720111}
+  - component: {fileID: 941720113}
   m_Layer: 0
   m_Name: Sacrococcygeal symphysis
   m_TagString: Untagged
@@ -39052,7 +39391,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &941720113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941720098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &942507448
 GameObject:
@@ -40392,6 +40743,7 @@ GameObject:
   - component: {fileID: 979487170}
   - component: {fileID: 979487171}
   - component: {fileID: 979487172}
+  - component: {fileID: 979487174}
   m_Layer: 0
   m_Name: Intervertebral disc L3-L4
   m_TagString: Untagged
@@ -40862,7 +41214,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &979487174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979487159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &979596960
 GameObject:
@@ -41519,6 +41883,7 @@ GameObject:
   - component: {fileID: 1003995353}
   - component: {fileID: 1003995351}
   - component: {fileID: 1003995356}
+  - component: {fileID: 1003995357}
   m_Layer: 0
   m_Name: Vertebra T9
   m_TagString: Untagged
@@ -41762,7 +42127,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1003995357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003995349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1004679765
 GameObject:
@@ -42075,6 +42452,7 @@ GameObject:
   - component: {fileID: 1012936223}
   - component: {fileID: 1012936224}
   - component: {fileID: 1012936225}
+  - component: {fileID: 1012936226}
   m_Layer: 0
   m_Name: Vertebra C4
   m_TagString: Untagged
@@ -42344,7 +42722,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1012936226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012936216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1015415309
 GameObject:
@@ -42616,6 +43006,7 @@ GameObject:
   - component: {fileID: 1025144549}
   - component: {fileID: 1025144550}
   - component: {fileID: 1025144551}
+  - component: {fileID: 1025144553}
   m_Layer: 0
   m_Name: Intervertebral disc C6-C7
   m_TagString: Untagged
@@ -43086,7 +43477,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1025144553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025144538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1025723179
 GameObject:
@@ -44378,6 +44781,7 @@ GameObject:
   - component: {fileID: 1063332272}
   - component: {fileID: 1063332270}
   - component: {fileID: 1063332275}
+  - component: {fileID: 1063332276}
   m_Layer: 0
   m_Name: Vertebra T3
   m_TagString: Untagged
@@ -44621,7 +45025,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1063332276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063332268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1064522270
 GameObject:
@@ -47000,6 +47416,7 @@ GameObject:
   - component: {fileID: 1132529859}
   - component: {fileID: 1132529857}
   - component: {fileID: 1132529862}
+  - component: {fileID: 1132529863}
   m_Layer: 0
   m_Name: Vertebra L5
   m_TagString: Untagged
@@ -47242,7 +47659,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1132529863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132529855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1133663193
 GameObject:
@@ -50729,6 +51158,7 @@ GameObject:
   - component: {fileID: 1254291296}
   - component: {fileID: 1254291297}
   - component: {fileID: 1254291298}
+  - component: {fileID: 1254291300}
   m_Layer: 0
   m_Name: Intervertebral disc L1-L2
   m_TagString: Untagged
@@ -51199,7 +51629,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1254291300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254291285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1259968077
 GameObject:
@@ -52623,6 +53065,7 @@ GameObject:
   - component: {fileID: 1300744468}
   - component: {fileID: 1300744466}
   - component: {fileID: 1300744471}
+  - component: {fileID: 1300744472}
   m_Layer: 0
   m_Name: Vertebra L3
   m_TagString: Untagged
@@ -52866,7 +53309,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1300744472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300744464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1307006086
 GameObject:
@@ -54561,7 +55016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   column: {fileID: 156443683}
-  distance: 1.46
+  limitDistance: 0
 --- !u!1 &1356893073
 GameObject:
   m_ObjectHideFlags: 0
@@ -55117,6 +55572,7 @@ GameObject:
   - component: {fileID: 1377947250}
   - component: {fileID: 1377947251}
   - component: {fileID: 1377947252}
+  - component: {fileID: 1377947254}
   m_Layer: 0
   m_Name: Intervertebral disc T7-T8
   m_TagString: Untagged
@@ -55587,7 +56043,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1377947254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377947239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1378523342
 GameObject:
@@ -56904,6 +57372,7 @@ GameObject:
   - component: {fileID: 1423562217}
   - component: {fileID: 1423562218}
   - component: {fileID: 1423562219}
+  - component: {fileID: 1423562221}
   m_Layer: 0
   m_Name: Intervertebral disc T4-T5
   m_TagString: Untagged
@@ -57374,7 +57843,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1423562221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423562206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1427953113
 GameObject:
@@ -57577,7 +58058,7 @@ Transform:
   - {fileID: 1471222624}
   - {fileID: 1735601286}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1438790397
 GameObject:
@@ -58001,6 +58482,7 @@ GameObject:
   - component: {fileID: 1457092743}
   - component: {fileID: 1457092744}
   - component: {fileID: 1457092745}
+  - component: {fileID: 1457092747}
   m_Layer: 0
   m_Name: Intervertebral disc T9-T10
   m_TagString: Untagged
@@ -58471,7 +58953,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1457092747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457092732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1458729429
 GameObject:
@@ -61750,6 +62244,7 @@ GameObject:
   - component: {fileID: 1559060238}
   - component: {fileID: 1559060239}
   - component: {fileID: 1559060240}
+  - component: {fileID: 1559060242}
   m_Layer: 0
   m_Name: Intervertebral disc C4-C5
   m_TagString: Untagged
@@ -62220,7 +62715,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1559060242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559060227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1561389927
 GameObject:
@@ -62929,6 +63436,7 @@ GameObject:
   - component: {fileID: 1572024056}
   - component: {fileID: 1572024054}
   - component: {fileID: 1572024059}
+  - component: {fileID: 1572024060}
   m_Layer: 0
   m_Name: Vertebra T1
   m_TagString: Untagged
@@ -63172,7 +63680,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1572024060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572024052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1572292901
 GameObject:
@@ -64575,6 +65095,7 @@ GameObject:
   - component: {fileID: 1615801561}
   - component: {fileID: 1615801562}
   - component: {fileID: 1615801563}
+  - component: {fileID: 1615801564}
   m_Layer: 0
   m_Name: Coccyx
   m_TagString: Untagged
@@ -64838,7 +65359,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1615801564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615801554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1621994837
 GameObject:
@@ -65819,6 +66352,7 @@ GameObject:
   - component: {fileID: 1645397125}
   - component: {fileID: 1645397126}
   - component: {fileID: 1645397127}
+  - component: {fileID: 1645397129}
   m_Layer: 0
   m_Name: Intervertebral disc T12-L1
   m_TagString: Untagged
@@ -66289,7 +66823,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1645397129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645397114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1645743248
 GameObject:
@@ -66477,6 +67023,7 @@ GameObject:
   - component: {fileID: 1649083686}
   - component: {fileID: 1649083687}
   - component: {fileID: 1649083688}
+  - component: {fileID: 1649083690}
   m_Layer: 0
   m_Name: Intervertebral disc T2-T3
   m_TagString: Untagged
@@ -66947,7 +67494,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1649083690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649083675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1649789791
 GameObject:
@@ -68163,6 +68722,7 @@ GameObject:
   - component: {fileID: 1684066694}
   - component: {fileID: 1684066692}
   - component: {fileID: 1684066698}
+  - component: {fileID: 1684066699}
   m_Layer: 0
   m_Name: Vertebra C5
   m_TagString: Untagged
@@ -68406,7 +68966,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1684066699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684066690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1686632699
 GameObject:
@@ -69778,6 +70350,7 @@ GameObject:
   - component: {fileID: 1708636477}
   - component: {fileID: 1708636475}
   - component: {fileID: 1708636480}
+  - component: {fileID: 1708636481}
   m_Layer: 0
   m_Name: Vertebra T6
   m_TagString: Untagged
@@ -70021,7 +70594,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1708636481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708636473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1709806765
 GameObject:
@@ -72904,6 +73489,7 @@ GameObject:
   - component: {fileID: 1828621251}
   - component: {fileID: 1828621252}
   - component: {fileID: 1828621253}
+  - component: {fileID: 1828621255}
   m_Layer: 0
   m_Name: Intervertebral disc L2-L3
   m_TagString: Untagged
@@ -73374,7 +73960,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1828621255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828621240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1839878687
 GameObject:
@@ -73774,6 +74372,7 @@ GameObject:
   - component: {fileID: 1855125894}
   - component: {fileID: 1855125892}
   - component: {fileID: 1855125897}
+  - component: {fileID: 1855125898}
   m_Layer: 0
   m_Name: Vertebra L2
   m_TagString: Untagged
@@ -74017,7 +74616,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1855125898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855125890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1856071311
 GameObject:
@@ -76973,7 +77584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   column: {fileID: 762837585}
-  distance: 0
+  limitDistance: 0
 --- !u!1 &1959649868
 GameObject:
   m_ObjectHideFlags: 0
@@ -77320,6 +77931,7 @@ GameObject:
   - component: {fileID: 1963061507}
   - component: {fileID: 1963061505}
   - component: {fileID: 1963061510}
+  - component: {fileID: 1963061511}
   m_Layer: 0
   m_Name: Vertebra T7
   m_TagString: Untagged
@@ -77563,7 +78175,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &1963061511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963061503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &1963259869
 GameObject:
@@ -77810,7 +78434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   column: {fileID: 2059523170}
-  distance: 1.02
+  limitDistance: 0
 --- !u!1 &1974283484
 GameObject:
   m_ObjectHideFlags: 0
@@ -79207,6 +79831,7 @@ GameObject:
   - component: {fileID: 2013571627}
   - component: {fileID: 2013571628}
   - component: {fileID: 2013571629}
+  - component: {fileID: 2013571630}
   m_Layer: 0
   m_Name: Vertebra C6
   m_TagString: Untagged
@@ -79476,7 +80101,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &2013571630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013571620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &2019048849
 GameObject:
@@ -80613,6 +81250,7 @@ GameObject:
   - component: {fileID: 2059523177}
   - component: {fileID: 2059523178}
   - component: {fileID: 2059523179}
+  - component: {fileID: 2059523180}
   m_Layer: 0
   m_Name: Sacrum
   m_TagString: Untagged
@@ -80881,7 +81519,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &2059523180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059523170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &2059819531
 GameObject:
@@ -81150,6 +81800,7 @@ GameObject:
   - component: {fileID: 2072515697}
   - component: {fileID: 2072515698}
   - component: {fileID: 2072515699}
+  - component: {fileID: 2072515700}
   m_Layer: 0
   m_Name: Axis (C2)
   m_TagString: Untagged
@@ -81531,7 +82182,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
+--- !u!114 &2072515700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072515688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
   information: {fileID: 0}
 --- !u!1 &2076226100
 GameObject:
@@ -81648,7 +82311,7 @@ Transform:
   - {fileID: 246078433}
   - {fileID: 734890938}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083333242
 GameObject:
@@ -83811,6 +84474,7 @@ GameObject:
   - component: {fileID: 3166387112047381373}
   - component: {fileID: 3166387112047381374}
   - component: {fileID: 3166387112047381375}
+  - component: {fileID: 3166387112047381376}
   m_Layer: 0
   m_Name: Anterior longitudinal ligament
   m_TagString: Untagged
@@ -85173,6 +85837,7 @@ GameObject:
   - component: {fileID: 7896096466015103854}
   - component: {fileID: 7896096466015103855}
   - component: {fileID: 7896096466015103856}
+  - component: {fileID: 7896096466015103857}
   m_Layer: 0
   m_Name: Intertransverse ligaments.r-
   m_TagString: Untagged
@@ -92555,6 +93220,7 @@ GameObject:
   - component: {fileID: 4403833137686767305}
   - component: {fileID: 4403833137686767306}
   - component: {fileID: 4403833137686767307}
+  - component: {fileID: 4403833137686767308}
   m_Layer: 0
   m_Name: Intercornual ligament.r-
   m_TagString: Untagged
@@ -94869,8 +95535,6 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
-  information: {fileID: 0}
 --- !u!114 &3166387112047381375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94888,6 +95552,20 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &3166387112047381376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165700489048974217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
+  information: {fileID: 0}
 --- !u!1 &3170983380656410911
 GameObject:
   m_ObjectHideFlags: 0
@@ -100985,8 +101663,6 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
-  information: {fileID: 0}
 --- !u!114 &4403833137686767307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101004,6 +101680,20 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &4403833137686767308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481724769104176459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
+  information: {fileID: 0}
 --- !u!1 &4406364145704629244
 GameObject:
   m_ObjectHideFlags: 0
@@ -101828,6 +102518,7 @@ GameObject:
   - component: {fileID: 8697177094815099837}
   - component: {fileID: 8697177094815099838}
   - component: {fileID: 8697177094815099839}
+  - component: {fileID: 8697177094815099840}
   m_Layer: 0
   m_Name: Interspinous ligaments-
   m_TagString: Untagged
@@ -103328,6 +104019,7 @@ GameObject:
   - component: {fileID: 7303741256951723031}
   - component: {fileID: 7303741256951723032}
   - component: {fileID: 7303741256951723033}
+  - component: {fileID: 7303741256951723034}
   m_Layer: 0
   m_Name: Ligamenta flava-
   m_TagString: Untagged
@@ -104863,7 +105555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &5554382130706820289
 GameObject:
   m_ObjectHideFlags: 0
@@ -105689,6 +106381,7 @@ GameObject:
   - component: {fileID: 6789734074846431746}
   - component: {fileID: 6789734074846431747}
   - component: {fileID: 6789734074846431748}
+  - component: {fileID: 6789734074846431749}
   m_Layer: 0
   m_Name: Nuchal ligament-
   m_TagString: Untagged
@@ -105977,6 +106670,7 @@ GameObject:
   - component: {fileID: 7379592726411087014}
   - component: {fileID: 7379592726411087015}
   - component: {fileID: 7379592726411087016}
+  - component: {fileID: 7379592726411087017}
   m_Layer: 0
   m_Name: Posterior longitudinal ligament-
   m_TagString: Untagged
@@ -106767,6 +107461,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &6070746393506353448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878209404548565906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6074937419704288031
 Transform:
   m_ObjectHideFlags: 0
@@ -107186,6 +107895,7 @@ GameObject:
   - component: {fileID: 7191050940335243129}
   - component: {fileID: 7191050940335243132}
   - component: {fileID: 7191050940335243133}
+  - component: {fileID: 7191050940335243134}
   m_Layer: 0
   m_Name: Supraspinous ligament
   m_TagString: Untagged
@@ -109462,8 +110172,6 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
-  information: {fileID: 0}
 --- !u!114 &6789734074846431748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109481,6 +110189,20 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &6789734074846431749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5755127131295941926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
+  information: {fileID: 0}
 --- !u!33 &6790047173843279931
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -109732,6 +110454,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4247170005539631163}
   m_Mesh: {fileID: 752050811187909607, guid: b4d6b83b2d29461499982c13b5e40d63, type: 3}
+--- !u!1 &6878209404548565906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6070746393506353448}
+  m_Layer: 0
+  m_Name: ligamentos_fibrosos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &6880890997647260702
 Transform:
   m_ObjectHideFlags: 0
@@ -110255,6 +110993,7 @@ GameObject:
   - component: {fileID: 7045595718606484384}
   - component: {fileID: 7045595718606484385}
   - component: {fileID: 7045595718606484386}
+  - component: {fileID: 7045595718606484387}
   m_Layer: 0
   m_Name: Intercornual ligament.l-
   m_TagString: Untagged
@@ -110796,8 +111535,6 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
-  information: {fileID: 0}
 --- !u!114 &7045595718606484386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110815,6 +111552,20 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &7045595718606484387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955970211210426232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
+  information: {fileID: 0}
 --- !u!33 &7049092030585161392
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -111388,8 +112139,6 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
-  information: {fileID: 0}
 --- !u!114 &7191050940335243133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111407,6 +112156,20 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &7191050940335243134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6148046673224509966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
+  information: {fileID: 0}
 --- !u!23 &7199619481575400430
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -112114,8 +112877,6 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
-  information: {fileID: 0}
 --- !u!114 &7303741256951723033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112133,6 +112894,20 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &7303741256951723034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5077755039736481770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
+  information: {fileID: 0}
 --- !u!23 &7315670294576814882
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -112562,8 +113337,6 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
-  information: {fileID: 0}
 --- !u!114 &7379592726411087016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112581,6 +113354,20 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &7379592726411087017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849425564895402225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
+  information: {fileID: 0}
 --- !u!33 &7382130541414994362
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -114568,8 +115355,6 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
-  information: {fileID: 0}
 --- !u!114 &7896096466015103856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114587,6 +115372,20 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &7896096466015103857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565480883467321780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
+  information: {fileID: 0}
 --- !u!1 &7898600410405972574
 GameObject:
   m_ObjectHideFlags: 0
@@ -115381,6 +116180,7 @@ GameObject:
   - component: {fileID: 8693990230511949000}
   - component: {fileID: 8693990230511949001}
   - component: {fileID: 8693990230511949002}
+  - component: {fileID: 8693990230511949003}
   m_Layer: 0
   m_Name: Intertransverse ligaments.l-
   m_TagString: Untagged
@@ -119426,8 +120226,6 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
-  information: {fileID: 0}
 --- !u!114 &8693990230511949002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119445,6 +120243,20 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &8693990230511949003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8106504579105467752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
+  information: {fileID: 0}
 --- !u!137 &8697177094815099833
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -119692,8 +120504,6 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0}
-  cartel: {fileID: 0}
-  information: {fileID: 0}
 --- !u!114 &8697177094815099839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119711,6 +120521,20 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &8697177094815099840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4597777957015331294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49257f20402987d4d896df5432f88afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 0}
+  information: {fileID: 0}
 --- !u!4 &8698595889074765981
 Transform:
   m_ObjectHideFlags: 0

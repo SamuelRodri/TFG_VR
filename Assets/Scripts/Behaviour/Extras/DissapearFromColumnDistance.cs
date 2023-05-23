@@ -5,18 +5,24 @@ using UnityEngine;
 
 namespace TFG.Behaviour.Extras
 {
+    // Class that controls the disappearance of a body layer when the column moves away
     public class DissapearFromColumnDistance : MonoBehaviour
     {
         [SerializeField] GameObject column;
-        [SerializeField] float distance;
+        [SerializeField] float limitDistance;
 
         // Update is called once per frame
         void Update()
         {
-            if(Vector3.Distance(transform.position, column.transform.position) > distance && SimulationController.areJointsActivated)
+            float actualDistance = Vector3.Distance(
+                transform.position, 
+                column.transform.position);
+
+            if (actualDistance > limitDistance && SimulationController.areJointsActivated)
             {
-                foreach (Transform child in transform)
+                foreach (Transform child in transform) 
                 {
+                    // Hide all children belonging to the body layer
                     child.gameObject.SetActive(false);
                 }
             }
@@ -24,6 +30,7 @@ namespace TFG.Behaviour.Extras
             {
                 foreach (Transform child in transform)
                 {
+                    // We show all the children that belong to the body layer
                     child.gameObject.SetActive(true);
                 }
             }

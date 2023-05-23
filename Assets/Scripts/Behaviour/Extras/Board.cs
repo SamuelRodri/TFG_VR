@@ -6,7 +6,7 @@ using UnityEngine.InputSystem.XR;
 
 namespace TFG.Behaviour.Extras
 {
-    public class Sign : MonoBehaviour
+    public class Board : MonoBehaviour
     {
         private GameObject player;
 
