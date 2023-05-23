@@ -4,7 +4,7 @@ using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
 
-namespace TFG.Behaviour
+namespace TFG.Behaviour.Extras
 {
     public class Sign : MonoBehaviour
     {

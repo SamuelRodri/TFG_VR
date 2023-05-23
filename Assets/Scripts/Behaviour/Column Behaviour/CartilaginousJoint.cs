@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TFG.Behaviour.Controllers;
 using TFG.UI;
 using UnityEngine;
 
-namespace TFG.Behaviour
+namespace TFG.Behaviour.Column
 {
     // Class representing a cartilaginous ligament of the spine
     public class CartilaginousJoint : MonoBehaviour

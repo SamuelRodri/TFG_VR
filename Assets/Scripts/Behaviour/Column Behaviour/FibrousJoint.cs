@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TFG.Behaviour.Controllers;
 using UnityEngine;
 
-namespace TFG.Behaviour
+namespace TFG.Behaviour.Column
 {
     public class FibrousJoint : MonoBehaviour
     {

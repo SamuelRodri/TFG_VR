@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TFG.Behaviour.Controllers;
+using TFG.Behaviour.VR;
 using UnityEngine;
 
-namespace TFG.Behaviour
+namespace TFG.Behaviour.Column
 {
     // Class that represents objects joined by joints and control their rotation
     public class JointComponent : MonoBehaviour
@@ -102,38 +104,6 @@ namespace TFG.Behaviour
             }
 
             return Quaternion.Euler(rotation);
-        }
-    
-        private Quaternion CheckHardLimits(Quaternion finalRot)
-        {
-            var a = NormalizeAngles(transform.rotation.eulerAngles - finalRot.eulerAngles);
-            if (a.y > 5)
-            {
-                //Debug.Log($"Mi rotacion actual es: {transform.rotation.eulerAngles}");
-                //Debug.Log($"Y mi rotacion objetivo es: {finalRot.eulerAngles}");
-                //Debug.Log($"Por lo que tengo que moverme: {a}");
-            }
-
-            if (a.x > 5 || a.y > 5 || a.z > 5)
-            {
-                cubeOffset = Quaternion.Inverse(cube.rotation) * transform.rotation;
-                finalRot = transform.rotation;
-            }
-            return finalRot;
-        }
-
-        public static Vector3 NormalizeAngles(Vector3 angles)
-        {
-            angles.x = NormalizeAngle(angles.x);
-            angles.y = NormalizeAngle(angles.y);
-            angles.z = NormalizeAngle(angles.z);
-
-            return angles;
-        }
-
-        public static float NormalizeAngle(float angle)
-        {
-            return Mathf.DeltaAngle(angle, 0f);
         }
     }
 }

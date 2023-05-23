@@ -636,7 +636,6 @@ GameObject:
   - component: {fileID: 12085096}
   - component: {fileID: 12085102}
   - component: {fileID: 12085101}
-  - component: {fileID: 12085104}
   - component: {fileID: 12085103}
   - component: {fileID: 12085105}
   - component: {fileID: 12085106}
@@ -953,18 +952,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &12085104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12085094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &12085105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1122,7 +1109,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -1721,7 +1707,6 @@ GameObject:
   - component: {fileID: 23968587}
   - component: {fileID: 23968586}
   - component: {fileID: 23968585}
-  - component: {fileID: 23968584}
   - component: {fileID: 23968583}
   - component: {fileID: 23968588}
   m_Layer: 0
@@ -1772,18 +1757,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &23968584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23968581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &23968585
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1978,7 +1951,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -6157,7 +6129,6 @@ GameObject:
   - component: {fileID: 139946966}
   - component: {fileID: 139946972}
   - component: {fileID: 139946971}
-  - component: {fileID: 139946974}
   - component: {fileID: 139946973}
   - component: {fileID: 139946975}
   - component: {fileID: 139946976}
@@ -6474,18 +6445,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &139946974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139946964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &139946975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6643,7 +6602,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -6779,7 +6737,6 @@ GameObject:
   - component: {fileID: 151136830}
   - component: {fileID: 151136836}
   - component: {fileID: 151136835}
-  - component: {fileID: 151136838}
   - component: {fileID: 151136837}
   - component: {fileID: 151136839}
   - component: {fileID: 151136840}
@@ -7096,18 +7053,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &151136838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151136828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &151136839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7265,7 +7210,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -7367,7 +7311,6 @@ GameObject:
   - component: {fileID: 154958174}
   - component: {fileID: 154958180}
   - component: {fileID: 154958179}
-  - component: {fileID: 154958182}
   - component: {fileID: 154958181}
   - component: {fileID: 154958183}
   - component: {fileID: 154958184}
@@ -7684,18 +7627,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &154958182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154958172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &154958183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7853,7 +7784,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -7869,7 +7799,6 @@ GameObject:
   - component: {fileID: 156443689}
   - component: {fileID: 156443688}
   - component: {fileID: 156443687}
-  - component: {fileID: 156443686}
   - component: {fileID: 156443685}
   - component: {fileID: 156443690}
   m_Layer: 0
@@ -7920,18 +7849,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &156443686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156443683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &156443687
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8126,7 +8043,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -9375,7 +9291,6 @@ GameObject:
   - component: {fileID: 198728871}
   - component: {fileID: 198728876}
   - component: {fileID: 198728877}
-  - component: {fileID: 198728879}
   - component: {fileID: 198728878}
   - component: {fileID: 198728880}
   - component: {fileID: 198728881}
@@ -9692,18 +9607,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &198728879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198728869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &198728880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9861,7 +9764,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -11201,7 +11103,6 @@ GameObject:
   m_Component:
   - component: {fileID: 246078433}
   - component: {fileID: 246078434}
-  - component: {fileID: 246078435}
   m_Layer: 0
   m_Name: SimulationController
   m_TagString: Untagged
@@ -11222,7 +11123,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2082642015}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &246078434
 MonoBehaviour:
@@ -11236,19 +11137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8bb8e3671f85f94c9a4c548a7b43a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &246078435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246078432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702b792c897aaf74eb39344b6f5c06d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  areJointsActivated: 1
 --- !u!1 &246771787
 GameObject:
   m_ObjectHideFlags: 0
@@ -13194,7 +13082,6 @@ GameObject:
   - component: {fileID: 322054845}
   - component: {fileID: 322054844}
   - component: {fileID: 322054843}
-  - component: {fileID: 322054842}
   - component: {fileID: 322054841}
   - component: {fileID: 322054846}
   m_Layer: 0
@@ -13245,18 +13132,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &322054842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322054839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &322054843
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13451,7 +13326,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -13951,7 +13825,6 @@ GameObject:
   - component: {fileID: 339475105}
   - component: {fileID: 339475111}
   - component: {fileID: 339475110}
-  - component: {fileID: 339475113}
   - component: {fileID: 339475112}
   - component: {fileID: 339475114}
   - component: {fileID: 339475115}
@@ -14268,18 +14141,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &339475113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339475103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &339475114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14437,7 +14298,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -14671,7 +14531,6 @@ GameObject:
   - component: {fileID: 356073505}
   - component: {fileID: 356073504}
   - component: {fileID: 356073503}
-  - component: {fileID: 356073502}
   - component: {fileID: 356073501}
   - component: {fileID: 356073506}
   m_Layer: 0
@@ -14722,18 +14581,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &356073502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 356073499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &356073503
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14928,7 +14775,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -15276,7 +15122,6 @@ GameObject:
   - component: {fileID: 365885191}
   - component: {fileID: 365885190}
   - component: {fileID: 365885189}
-  - component: {fileID: 365885188}
   - component: {fileID: 365885187}
   - component: {fileID: 365885192}
   m_Layer: 0
@@ -15327,18 +15172,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &365885188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365885185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &365885189
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15533,7 +15366,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -16198,54 +16030,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391869390}
   m_CullTransparentMesh: 1
---- !u!1 &393180821
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 393180822}
-  - component: {fileID: 393180823}
-  m_Layer: 0
-  m_Name: RotationController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &393180822
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393180821}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1649951, y: 1.3825597, z: -0.09367883}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2082642015}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &393180823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393180821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77dac3a7547024146a83706bf7a5825b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  console: {fileID: 1654748734}
-  text: {fileID: 1981042507}
-  vector: 1
-  toggleReference: {fileID: -2108231696310013451, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &393831578
 GameObject:
   m_ObjectHideFlags: 0
@@ -18186,7 +17970,6 @@ GameObject:
   - component: {fileID: 474653991}
   - component: {fileID: 474653997}
   - component: {fileID: 474653996}
-  - component: {fileID: 474653999}
   - component: {fileID: 474653998}
   - component: {fileID: 474654000}
   - component: {fileID: 474654001}
@@ -18503,18 +18286,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &474653999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474653989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &474654000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18672,7 +18443,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -19761,7 +19531,6 @@ GameObject:
   - component: {fileID: 491638182}
   - component: {fileID: 491638181}
   - component: {fileID: 491638180}
-  - component: {fileID: 491638179}
   - component: {fileID: 491638178}
   - component: {fileID: 491638183}
   m_Layer: 0
@@ -19812,18 +19581,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &491638179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491638176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &491638180
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20018,7 +19775,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -21846,7 +21602,6 @@ GameObject:
   - component: {fileID: 572278731}
   - component: {fileID: 572278737}
   - component: {fileID: 572278736}
-  - component: {fileID: 572278739}
   - component: {fileID: 572278738}
   - component: {fileID: 572278740}
   - component: {fileID: 572278741}
@@ -22163,18 +21918,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &572278739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572278729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &572278740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22332,7 +22075,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -23972,7 +23714,6 @@ GameObject:
   - component: {fileID: 622710821}
   - component: {fileID: 622710820}
   - component: {fileID: 622710819}
-  - component: {fileID: 622710818}
   - component: {fileID: 622710817}
   - component: {fileID: 622710822}
   m_Layer: 0
@@ -24023,18 +23764,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &622710818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622710815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &622710819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24229,7 +23958,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -24248,7 +23976,6 @@ GameObject:
   - component: {fileID: 622958989}
   - component: {fileID: 622958995}
   - component: {fileID: 622958994}
-  - component: {fileID: 622958997}
   - component: {fileID: 622958996}
   - component: {fileID: 622958998}
   - component: {fileID: 622958999}
@@ -24565,18 +24292,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &622958997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622958986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &622958998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24734,7 +24449,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -27276,7 +26990,6 @@ GameObject:
   - component: {fileID: 695203025}
   - component: {fileID: 695203031}
   - component: {fileID: 695203030}
-  - component: {fileID: 695203033}
   - component: {fileID: 695203032}
   - component: {fileID: 695203034}
   - component: {fileID: 695203035}
@@ -27593,18 +27306,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &695203033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695203023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &695203034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27762,7 +27463,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -28970,7 +28670,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2082642015}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &743173726
 GameObject:
@@ -29174,7 +28874,6 @@ GameObject:
   - component: {fileID: 745136006}
   - component: {fileID: 745136005}
   - component: {fileID: 745136004}
-  - component: {fileID: 745136003}
   - component: {fileID: 745136002}
   - component: {fileID: 745136007}
   - component: {fileID: 745136008}
@@ -29217,18 +28916,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 682487104069484344, guid: b962e2552b43c3f489c76e27af324782, type: 3}
---- !u!114 &745136003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 745136000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &745136004
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29456,7 +29143,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -29781,7 +29467,6 @@ GameObject:
   - component: {fileID: 753422749}
   - component: {fileID: 753422748}
   - component: {fileID: 753422747}
-  - component: {fileID: 753422746}
   - component: {fileID: 753422745}
   - component: {fileID: 753422750}
   m_Layer: 0
@@ -29832,18 +29517,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &753422746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753422743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &753422747
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30038,7 +29711,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -30090,7 +29762,6 @@ GameObject:
   - component: {fileID: 765381398}
   - component: {fileID: 765381404}
   - component: {fileID: 765381403}
-  - component: {fileID: 765381406}
   - component: {fileID: 765381405}
   - component: {fileID: 765381407}
   - component: {fileID: 765381408}
@@ -30407,18 +30078,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &765381406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765381396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &765381407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30576,7 +30235,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -32475,7 +32133,6 @@ GameObject:
   - component: {fileID: 831006895}
   - component: {fileID: 831006901}
   - component: {fileID: 831006900}
-  - component: {fileID: 831006903}
   - component: {fileID: 831006902}
   - component: {fileID: 831006904}
   - component: {fileID: 831006905}
@@ -32792,18 +32449,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &831006903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831006893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &831006904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32961,7 +32606,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -32977,7 +32621,6 @@ GameObject:
   - component: {fileID: 832553306}
   - component: {fileID: 832553305}
   - component: {fileID: 832553303}
-  - component: {fileID: 832553302}
   - component: {fileID: 832553301}
   - component: {fileID: 832553307}
   m_Layer: 0
@@ -33028,18 +32671,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &832553302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832553299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &832553303
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33234,7 +32865,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -33954,7 +33584,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -34224,7 +33853,6 @@ GameObject:
   - component: {fileID: 855810843}
   - component: {fileID: 855810849}
   - component: {fileID: 855810848}
-  - component: {fileID: 855810851}
   - component: {fileID: 855810850}
   - component: {fileID: 855810852}
   - component: {fileID: 855810853}
@@ -34541,18 +34169,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &855810851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855810841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &855810852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34710,7 +34326,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -35226,7 +34841,6 @@ GameObject:
   - component: {fileID: 863261573}
   - component: {fileID: 863261572}
   - component: {fileID: 863261571}
-  - component: {fileID: 863261570}
   - component: {fileID: 863261569}
   - component: {fileID: 863261574}
   m_Layer: 0
@@ -35277,18 +34891,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &863261570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863261567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &863261571
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35483,7 +35085,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -38601,7 +38202,6 @@ GameObject:
   - component: {fileID: 941224616}
   - component: {fileID: 941224615}
   - component: {fileID: 941224614}
-  - component: {fileID: 941224613}
   - component: {fileID: 941224612}
   - component: {fileID: 941224617}
   m_Layer: 0
@@ -38652,18 +38252,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &941224613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941224610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &941224614
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38858,7 +38446,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -38991,7 +38578,6 @@ GameObject:
   - component: {fileID: 941720100}
   - component: {fileID: 941720105}
   - component: {fileID: 941720106}
-  - component: {fileID: 941720108}
   - component: {fileID: 941720107}
   - component: {fileID: 941720109}
   - component: {fileID: 941720110}
@@ -39308,18 +38894,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &941720108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941720098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &941720109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39477,7 +39051,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -40815,7 +40388,6 @@ GameObject:
   - component: {fileID: 979487161}
   - component: {fileID: 979487167}
   - component: {fileID: 979487166}
-  - component: {fileID: 979487169}
   - component: {fileID: 979487168}
   - component: {fileID: 979487170}
   - component: {fileID: 979487171}
@@ -41132,18 +40704,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &979487169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979487159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &979487170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41301,7 +40861,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -41958,7 +41517,6 @@ GameObject:
   - component: {fileID: 1003995355}
   - component: {fileID: 1003995354}
   - component: {fileID: 1003995353}
-  - component: {fileID: 1003995352}
   - component: {fileID: 1003995351}
   - component: {fileID: 1003995356}
   m_Layer: 0
@@ -42009,18 +41567,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1003995352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003995349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1003995353
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42215,7 +41761,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -42526,7 +42071,6 @@ GameObject:
   - component: {fileID: 1012936222}
   - component: {fileID: 1012936221}
   - component: {fileID: 1012936220}
-  - component: {fileID: 1012936219}
   - component: {fileID: 1012936218}
   - component: {fileID: 1012936223}
   - component: {fileID: 1012936224}
@@ -42575,18 +42119,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5815955658093413978, guid: b962e2552b43c3f489c76e27af324782, type: 3}
---- !u!114 &1012936219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012936216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1012936220
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42811,7 +42343,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -43081,7 +42612,6 @@ GameObject:
   - component: {fileID: 1025144540}
   - component: {fileID: 1025144546}
   - component: {fileID: 1025144545}
-  - component: {fileID: 1025144548}
   - component: {fileID: 1025144547}
   - component: {fileID: 1025144549}
   - component: {fileID: 1025144550}
@@ -43398,18 +42928,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1025144548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025144538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1025144549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43567,7 +43085,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -44859,7 +44376,6 @@ GameObject:
   - component: {fileID: 1063332274}
   - component: {fileID: 1063332273}
   - component: {fileID: 1063332272}
-  - component: {fileID: 1063332271}
   - component: {fileID: 1063332270}
   - component: {fileID: 1063332275}
   m_Layer: 0
@@ -44910,18 +44426,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1063332271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063332268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1063332272
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -45116,7 +44620,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -47495,7 +46998,6 @@ GameObject:
   - component: {fileID: 1132529861}
   - component: {fileID: 1132529860}
   - component: {fileID: 1132529859}
-  - component: {fileID: 1132529858}
   - component: {fileID: 1132529857}
   - component: {fileID: 1132529862}
   m_Layer: 0
@@ -47545,18 +47047,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1132529858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132529855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1132529859
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47751,7 +47241,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -51236,7 +50725,6 @@ GameObject:
   - component: {fileID: 1254291287}
   - component: {fileID: 1254291293}
   - component: {fileID: 1254291292}
-  - component: {fileID: 1254291295}
   - component: {fileID: 1254291294}
   - component: {fileID: 1254291296}
   - component: {fileID: 1254291297}
@@ -51553,18 +51041,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1254291295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1254291285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1254291296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51722,7 +51198,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -53146,7 +52621,6 @@ GameObject:
   - component: {fileID: 1300744470}
   - component: {fileID: 1300744469}
   - component: {fileID: 1300744468}
-  - component: {fileID: 1300744467}
   - component: {fileID: 1300744466}
   - component: {fileID: 1300744471}
   m_Layer: 0
@@ -53197,18 +52671,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1300744467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300744464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1300744468
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -53403,7 +52865,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -55652,7 +55113,6 @@ GameObject:
   - component: {fileID: 1377947241}
   - component: {fileID: 1377947247}
   - component: {fileID: 1377947246}
-  - component: {fileID: 1377947249}
   - component: {fileID: 1377947248}
   - component: {fileID: 1377947250}
   - component: {fileID: 1377947251}
@@ -55969,18 +55429,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1377947249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377947239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1377947250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56138,7 +55586,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -57453,7 +56900,6 @@ GameObject:
   - component: {fileID: 1423562208}
   - component: {fileID: 1423562214}
   - component: {fileID: 1423562213}
-  - component: {fileID: 1423562216}
   - component: {fileID: 1423562215}
   - component: {fileID: 1423562217}
   - component: {fileID: 1423562218}
@@ -57770,18 +57216,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1423562216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423562206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1423562217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57939,7 +57373,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -58564,7 +57997,6 @@ GameObject:
   - component: {fileID: 1457092734}
   - component: {fileID: 1457092740}
   - component: {fileID: 1457092739}
-  - component: {fileID: 1457092742}
   - component: {fileID: 1457092741}
   - component: {fileID: 1457092743}
   - component: {fileID: 1457092744}
@@ -58881,18 +58313,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1457092742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1457092732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1457092743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59050,7 +58470,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -62327,7 +61746,6 @@ GameObject:
   - component: {fileID: 1559060229}
   - component: {fileID: 1559060235}
   - component: {fileID: 1559060234}
-  - component: {fileID: 1559060237}
   - component: {fileID: 1559060236}
   - component: {fileID: 1559060238}
   - component: {fileID: 1559060239}
@@ -62644,18 +62062,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1559060237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559060227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1559060238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62813,7 +62219,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -63522,7 +62927,6 @@ GameObject:
   - component: {fileID: 1572024058}
   - component: {fileID: 1572024057}
   - component: {fileID: 1572024056}
-  - component: {fileID: 1572024055}
   - component: {fileID: 1572024054}
   - component: {fileID: 1572024059}
   m_Layer: 0
@@ -63573,18 +62977,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1572024055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572024052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1572024056
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -63779,7 +63171,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -64457,7 +63848,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2082642015}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1591643808
 GameObject:
@@ -65180,7 +64571,6 @@ GameObject:
   - component: {fileID: 1615801560}
   - component: {fileID: 1615801559}
   - component: {fileID: 1615801558}
-  - component: {fileID: 1615801557}
   - component: {fileID: 1615801556}
   - component: {fileID: 1615801561}
   - component: {fileID: 1615801562}
@@ -65224,18 +64614,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4255328910450092391, guid: b962e2552b43c3f489c76e27af324782, type: 3}
---- !u!114 &1615801557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1615801554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1615801558
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -65459,7 +64837,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -66438,7 +65815,6 @@ GameObject:
   - component: {fileID: 1645397116}
   - component: {fileID: 1645397122}
   - component: {fileID: 1645397121}
-  - component: {fileID: 1645397124}
   - component: {fileID: 1645397123}
   - component: {fileID: 1645397125}
   - component: {fileID: 1645397126}
@@ -66755,18 +66131,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1645397124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645397114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1645397125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66924,7 +66288,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -67110,7 +66473,6 @@ GameObject:
   - component: {fileID: 1649083677}
   - component: {fileID: 1649083683}
   - component: {fileID: 1649083682}
-  - component: {fileID: 1649083685}
   - component: {fileID: 1649083684}
   - component: {fileID: 1649083686}
   - component: {fileID: 1649083687}
@@ -67427,18 +66789,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1649083685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649083675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1649083686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67596,7 +66946,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -68812,7 +68161,6 @@ GameObject:
   - component: {fileID: 1684066697}
   - component: {fileID: 1684066696}
   - component: {fileID: 1684066694}
-  - component: {fileID: 1684066693}
   - component: {fileID: 1684066692}
   - component: {fileID: 1684066698}
   m_Layer: 0
@@ -68863,18 +68211,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1684066693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1684066690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1684066694
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -69069,7 +68405,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -70441,7 +69776,6 @@ GameObject:
   - component: {fileID: 1708636479}
   - component: {fileID: 1708636478}
   - component: {fileID: 1708636477}
-  - component: {fileID: 1708636476}
   - component: {fileID: 1708636475}
   - component: {fileID: 1708636480}
   m_Layer: 0
@@ -70492,18 +69826,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1708636476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708636473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1708636477
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -70698,7 +70020,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -73579,7 +72900,6 @@ GameObject:
   - component: {fileID: 1828621242}
   - component: {fileID: 1828621248}
   - component: {fileID: 1828621247}
-  - component: {fileID: 1828621250}
   - component: {fileID: 1828621249}
   - component: {fileID: 1828621251}
   - component: {fileID: 1828621252}
@@ -73896,18 +73216,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1828621250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828621240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1828621251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74065,7 +73373,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -74465,7 +73772,6 @@ GameObject:
   - component: {fileID: 1855125896}
   - component: {fileID: 1855125895}
   - component: {fileID: 1855125894}
-  - component: {fileID: 1855125893}
   - component: {fileID: 1855125892}
   - component: {fileID: 1855125897}
   m_Layer: 0
@@ -74516,18 +73822,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1855125893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855125890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1855125894
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -74722,7 +74016,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -78025,7 +77318,6 @@ GameObject:
   - component: {fileID: 1963061509}
   - component: {fileID: 1963061508}
   - component: {fileID: 1963061507}
-  - component: {fileID: 1963061506}
   - component: {fileID: 1963061505}
   - component: {fileID: 1963061510}
   m_Layer: 0
@@ -78076,18 +77368,6 @@ MonoBehaviour:
   cube: {fileID: 0}
   cubeOffset: {x: 0, y: 0, z: 0, w: 0}
   cubePosOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1963061506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963061503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1963061507
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -78282,7 +77562,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -79924,7 +79203,6 @@ GameObject:
   - component: {fileID: 2013571625}
   - component: {fileID: 2013571624}
   - component: {fileID: 2013571621}
-  - component: {fileID: 2013571623}
   - component: {fileID: 2013571622}
   - component: {fileID: 2013571627}
   - component: {fileID: 2013571628}
@@ -79966,18 +79244,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8229096967086215710, guid: b962e2552b43c3f489c76e27af324782, type: 3}
---- !u!114 &2013571623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013571620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2013571624
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -80209,7 +79475,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -81344,7 +80609,6 @@ GameObject:
   - component: {fileID: 2059523176}
   - component: {fileID: 2059523175}
   - component: {fileID: 2059523174}
-  - component: {fileID: 2059523173}
   - component: {fileID: 2059523172}
   - component: {fileID: 2059523177}
   - component: {fileID: 2059523178}
@@ -81392,18 +80656,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8489618132397480986, guid: b962e2552b43c3f489c76e27af324782, type: 3}
---- !u!114 &2059523173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059523170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348d5f4d1af08ec489117b4728ff8338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &2059523174
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -81628,7 +80880,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -82279,7 +81530,6 @@ MonoBehaviour:
   isGrabbed: 0
   offset: {x: 0, y: 0, z: 0, w: 0}
   vertebraDiff: {x: 0, y: 0, z: 0}
-  rc: {fileID: 0}
   rotation: {x: 0, y: 0, z: 0}
   cartel: {fileID: 0}
   information: {fileID: 0}
@@ -82394,7 +81644,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 393180822}
   - {fileID: 1587358470}
   - {fileID: 246078433}
   - {fileID: 734890938}
@@ -84560,6 +83809,8 @@ GameObject:
   - component: {fileID: 3166387112047381369}
   - component: {fileID: 3166387112047381372}
   - component: {fileID: 3166387112047381373}
+  - component: {fileID: 3166387112047381374}
+  - component: {fileID: 3166387112047381375}
   m_Layer: 0
   m_Name: Anterior longitudinal ligament
   m_TagString: Untagged
@@ -85920,6 +85171,8 @@ GameObject:
   - component: {fileID: 7896096466015103851}
   - component: {fileID: 7896096466015103852}
   - component: {fileID: 7896096466015103854}
+  - component: {fileID: 7896096466015103855}
+  - component: {fileID: 7896096466015103856}
   m_Layer: 0
   m_Name: Intertransverse ligaments.r-
   m_TagString: Untagged
@@ -93300,6 +92553,8 @@ GameObject:
   - component: {fileID: 4403833137686767302}
   - component: {fileID: 4403833137686767303}
   - component: {fileID: 4403833137686767305}
+  - component: {fileID: 4403833137686767306}
+  - component: {fileID: 4403833137686767307}
   m_Layer: 0
   m_Name: Intercornual ligament.r-
   m_TagString: Untagged
@@ -95485,6 +94740,154 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &3166387112047381374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165700489048974217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1182b87dfb889af4f9d88174542d42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1587358469}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  isGrabbed: 0
+  offset: {x: 0, y: 0, z: 0, w: 0}
+  vertebraDiff: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
+  cartel: {fileID: 0}
+  information: {fileID: 0}
+--- !u!114 &3166387112047381375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165700489048974217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636ee4df5c52cfd46adaf85aace9931a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prev: {fileID: 0}
+  next: {fileID: 0}
+  cube: {fileID: 0}
+  cubeOffset: {x: 0, y: 0, z: 0, w: 0}
+  cubePosOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &3170983380656410911
 GameObject:
   m_ObjectHideFlags: 0
@@ -101453,6 +100856,154 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &4403833137686767306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481724769104176459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1182b87dfb889af4f9d88174542d42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1587358469}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  isGrabbed: 0
+  offset: {x: 0, y: 0, z: 0, w: 0}
+  vertebraDiff: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
+  cartel: {fileID: 0}
+  information: {fileID: 0}
+--- !u!114 &4403833137686767307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481724769104176459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636ee4df5c52cfd46adaf85aace9931a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prev: {fileID: 0}
+  next: {fileID: 0}
+  cube: {fileID: 0}
+  cubeOffset: {x: 0, y: 0, z: 0, w: 0}
+  cubePosOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &4406364145704629244
 GameObject:
   m_ObjectHideFlags: 0
@@ -102275,6 +101826,8 @@ GameObject:
   - component: {fileID: 8697177094815099834}
   - component: {fileID: 8697177094815099835}
   - component: {fileID: 8697177094815099837}
+  - component: {fileID: 8697177094815099838}
+  - component: {fileID: 8697177094815099839}
   m_Layer: 0
   m_Name: Interspinous ligaments-
   m_TagString: Untagged
@@ -103773,6 +103326,8 @@ GameObject:
   - component: {fileID: 7303741256951723028}
   - component: {fileID: 7303741256951723029}
   - component: {fileID: 7303741256951723031}
+  - component: {fileID: 7303741256951723032}
+  - component: {fileID: 7303741256951723033}
   m_Layer: 0
   m_Name: Ligamenta flava-
   m_TagString: Untagged
@@ -106132,6 +105687,8 @@ GameObject:
   - component: {fileID: 6789734074846431743}
   - component: {fileID: 6789734074846431744}
   - component: {fileID: 6789734074846431746}
+  - component: {fileID: 6789734074846431747}
+  - component: {fileID: 6789734074846431748}
   m_Layer: 0
   m_Name: Nuchal ligament-
   m_TagString: Untagged
@@ -106418,6 +105975,8 @@ GameObject:
   - component: {fileID: 7379592726411087011}
   - component: {fileID: 7379592726411087012}
   - component: {fileID: 7379592726411087014}
+  - component: {fileID: 7379592726411087015}
+  - component: {fileID: 7379592726411087016}
   m_Layer: 0
   m_Name: Posterior longitudinal ligament-
   m_TagString: Untagged
@@ -107622,6 +107181,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3481447288101456054}
   - component: {fileID: 7191050940335243128}
+  - component: {fileID: 7191050940335243131}
+  - component: {fileID: 7191050940335243130}
+  - component: {fileID: 7191050940335243129}
+  - component: {fileID: 7191050940335243132}
+  - component: {fileID: 7191050940335243133}
   m_Layer: 0
   m_Name: Supraspinous ligament
   m_TagString: Untagged
@@ -109769,6 +109333,154 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &6789734074846431747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5755127131295941926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1182b87dfb889af4f9d88174542d42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1587358469}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  isGrabbed: 0
+  offset: {x: 0, y: 0, z: 0, w: 0}
+  vertebraDiff: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
+  cartel: {fileID: 0}
+  information: {fileID: 0}
+--- !u!114 &6789734074846431748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5755127131295941926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636ee4df5c52cfd46adaf85aace9931a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prev: {fileID: 0}
+  next: {fileID: 0}
+  cube: {fileID: 0}
+  cubeOffset: {x: 0, y: 0, z: 0, w: 0}
+  cubePosOffset: {x: 0, y: 0, z: 0}
 --- !u!33 &6790047173843279931
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -110541,6 +110253,8 @@ GameObject:
   - component: {fileID: 7045595718606484381}
   - component: {fileID: 7045595718606484382}
   - component: {fileID: 7045595718606484384}
+  - component: {fileID: 7045595718606484385}
+  - component: {fileID: 7045595718606484386}
   m_Layer: 0
   m_Name: Intercornual ligament.l-
   m_TagString: Untagged
@@ -110953,6 +110667,154 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &7045595718606484385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955970211210426232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1182b87dfb889af4f9d88174542d42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1587358469}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  isGrabbed: 0
+  offset: {x: 0, y: 0, z: 0, w: 0}
+  vertebraDiff: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
+  cartel: {fileID: 0}
+  information: {fileID: 0}
+--- !u!114 &7045595718606484386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955970211210426232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636ee4df5c52cfd46adaf85aace9931a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prev: {fileID: 0}
+  next: {fileID: 0}
+  cube: {fileID: 0}
+  cubeOffset: {x: 0, y: 0, z: 0, w: 0}
+  cubePosOffset: {x: 0, y: 0, z: 0}
 --- !u!33 &7049092030585161392
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -111355,6 +111217,196 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000028020237, y: 0.24941796, z: -0.019844705}
     m_Extent: {x: 0.004327739, y: 0.25010622, z: 0.020901846}
   m_DirtyAABB: 0
+--- !u!54 &7191050940335243129
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6148046673224509966}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: Infinity
+  m_AngularDrag: Infinity
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!64 &7191050940335243130
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6148046673224509966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!114 &7191050940335243131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6148046673224509966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820274d30a6d9094cb2ec58e4096664d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7191050940335243132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6148046673224509966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1182b87dfb889af4f9d88174542d42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1587358469}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  isGrabbed: 0
+  offset: {x: 0, y: 0, z: 0, w: 0}
+  vertebraDiff: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
+  cartel: {fileID: 0}
+  information: {fileID: 0}
+--- !u!114 &7191050940335243133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6148046673224509966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636ee4df5c52cfd46adaf85aace9931a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prev: {fileID: 0}
+  next: {fileID: 0}
+  cube: {fileID: 0}
+  cubeOffset: {x: 0, y: 0, z: 0, w: 0}
+  cubePosOffset: {x: 0, y: 0, z: 0}
 --- !u!23 &7199619481575400430
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -111933,6 +111985,154 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &7303741256951723032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5077755039736481770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1182b87dfb889af4f9d88174542d42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1587358469}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  isGrabbed: 0
+  offset: {x: 0, y: 0, z: 0, w: 0}
+  vertebraDiff: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
+  cartel: {fileID: 0}
+  information: {fileID: 0}
+--- !u!114 &7303741256951723033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5077755039736481770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636ee4df5c52cfd46adaf85aace9931a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prev: {fileID: 0}
+  next: {fileID: 0}
+  cube: {fileID: 0}
+  cubeOffset: {x: 0, y: 0, z: 0, w: 0}
+  cubePosOffset: {x: 0, y: 0, z: 0}
 --- !u!23 &7315670294576814882
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -112233,6 +112433,154 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &7379592726411087015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849425564895402225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1182b87dfb889af4f9d88174542d42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1587358469}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  isGrabbed: 0
+  offset: {x: 0, y: 0, z: 0, w: 0}
+  vertebraDiff: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
+  cartel: {fileID: 0}
+  information: {fileID: 0}
+--- !u!114 &7379592726411087016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849425564895402225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636ee4df5c52cfd46adaf85aace9931a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prev: {fileID: 0}
+  next: {fileID: 0}
+  cube: {fileID: 0}
+  cubeOffset: {x: 0, y: 0, z: 0, w: 0}
+  cubePosOffset: {x: 0, y: 0, z: 0}
 --- !u!33 &7382130541414994362
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -114091,6 +114439,154 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &7896096466015103855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565480883467321780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1182b87dfb889af4f9d88174542d42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1587358469}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  isGrabbed: 0
+  offset: {x: 0, y: 0, z: 0, w: 0}
+  vertebraDiff: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
+  cartel: {fileID: 0}
+  information: {fileID: 0}
+--- !u!114 &7896096466015103856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565480883467321780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636ee4df5c52cfd46adaf85aace9931a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prev: {fileID: 0}
+  next: {fileID: 0}
+  cube: {fileID: 0}
+  cubeOffset: {x: 0, y: 0, z: 0, w: 0}
+  cubePosOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &7898600410405972574
 GameObject:
   m_ObjectHideFlags: 0
@@ -114883,6 +115379,8 @@ GameObject:
   - component: {fileID: 8693990230511948997}
   - component: {fileID: 8693990230511948998}
   - component: {fileID: 8693990230511949000}
+  - component: {fileID: 8693990230511949001}
+  - component: {fileID: 8693990230511949002}
   m_Layer: 0
   m_Name: Intertransverse ligaments.l-
   m_TagString: Untagged
@@ -115384,7 +115882,6 @@ GameObject:
   - component: {fileID: 8156037559850887176}
   - component: {fileID: 8156037559850887177}
   - component: {fileID: 8156037559850887178}
-  - component: {fileID: 8156037559850887179}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Controller
@@ -115945,21 +116442,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grip: 0
   trigger: 0
---- !u!114 &8156037559850887179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8156037559850398817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 697f93868fe6527499a3f99b1acad244, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  grabbed: 0
-  value: 0
 --- !u!4 &8156037559850887185
 Transform:
   m_ObjectHideFlags: 0
@@ -118815,6 +119297,154 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &8693990230511949001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8106504579105467752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1182b87dfb889af4f9d88174542d42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1587358469}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  isGrabbed: 0
+  offset: {x: 0, y: 0, z: 0, w: 0}
+  vertebraDiff: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
+  cartel: {fileID: 0}
+  information: {fileID: 0}
+--- !u!114 &8693990230511949002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8106504579105467752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636ee4df5c52cfd46adaf85aace9931a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prev: {fileID: 0}
+  next: {fileID: 0}
+  cube: {fileID: 0}
+  cubeOffset: {x: 0, y: 0, z: 0, w: 0}
+  cubePosOffset: {x: 0, y: 0, z: 0}
 --- !u!137 &8697177094815099833
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -118933,6 +119563,154 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &8697177094815099838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4597777957015331294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1182b87dfb889af4f9d88174542d42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1587358469}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  isGrabbed: 0
+  offset: {x: 0, y: 0, z: 0, w: 0}
+  vertebraDiff: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
+  cartel: {fileID: 0}
+  information: {fileID: 0}
+--- !u!114 &8697177094815099839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4597777957015331294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636ee4df5c52cfd46adaf85aace9931a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prev: {fileID: 0}
+  next: {fileID: 0}
+  cube: {fileID: 0}
+  cubeOffset: {x: 0, y: 0, z: 0, w: 0}
+  cubePosOffset: {x: 0, y: 0, z: 0}
 --- !u!4 &8698595889074765981
 Transform:
   m_ObjectHideFlags: 0

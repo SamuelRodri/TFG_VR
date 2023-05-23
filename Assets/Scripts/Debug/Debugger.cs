@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TFG.Behaviour;
+using TFG.Behaviour.Controllers;
 using UnityEngine;
 
 public class Debugger : MonoBehaviour
@@ -26,6 +27,16 @@ public class Debugger : MonoBehaviour
             visibilityController.ToggleLigamentsVisibility();
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            visibilityController.ToggleNervsVisibility();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            visibilityController.ToggleCardioVisibility();
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             controller.BreakJointsPress();
@@ -33,7 +44,7 @@ public class Debugger : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            controller.RestoreJointsPress();
+            controller.RestoreColumn();
         }
     }
 }

@@ -1,8 +1,10 @@
 ﻿using TFG.Behaviour;
+using TFG.Behaviour.Column;
 using UnityEngine;
 
-namespace TFG.Behaviour
+namespace TFG.Behaviour.Controllers
 {
+    // General controller that executes the events
     public class SimulationController : MonoBehaviour
     {
         public delegate void BreakJoints();
@@ -22,12 +24,6 @@ namespace TFG.Behaviour
             }
         }
 
-        public void RestoreJointsPress()
-        {
-            areJointsActivated = true;
-            OnRestore();
-        }
-
         public void RestoreColumn()
         {
             var jointComponents = Object.FindObjectsOfType<JointComponent>();
@@ -41,7 +37,8 @@ namespace TFG.Behaviour
                     component.GetComponent<CartilaginousJoint>().RestoreLinks();
                 }
 
-                RestoreJointsPress();
+                areJointsActivated = true;
+                OnRestore();
             }
         }
     }
