@@ -46,14 +46,14 @@ namespace TFG.Behaviour.Hand
 
         protected override void OnSelectEntered(SelectEnterEventArgs args)
         {
-            grabbedObject = args.interactableObject.transform.gameObject;
+            //grabbedObject = args.interactableObject.transform.gameObject;
             information.text = args.interactableObject.transform.name;
             base.OnSelectEntered(args);
         }
 
         protected override void OnSelectExited(SelectExitEventArgs args)
         {
-            grabbedObject = null;
+            //grabbedObject = null;
             base.OnSelectExited(args);
         }
     }

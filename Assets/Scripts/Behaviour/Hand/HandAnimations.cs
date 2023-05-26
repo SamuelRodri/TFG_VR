@@ -23,7 +23,6 @@ namespace TFG.Behaviour.Hand
 
         private void Update()
         {
-            //SetAnimFloats(grip, trigger);
             SetAnimFloats(controller.GripValue, controller.TriggerValue);
         }
 

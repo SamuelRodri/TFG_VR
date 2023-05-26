@@ -42,6 +42,7 @@ namespace TFG.Behaviour.VR
         protected override void OnSelectEntering(SelectEnterEventArgs args)
         {
             interactor = args.interactorObject;
+            
             isGrabbed = true;
             if (interactor is XRDirectInteractor)
             {
