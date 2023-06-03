@@ -56,6 +56,7 @@ namespace TFG.Behaviour.Controllers
 
         public void BackToNormalMode()
         {
+            RestoreColumn();
             OnNormalMode();
         }
     }
