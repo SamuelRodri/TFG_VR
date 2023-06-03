@@ -49,13 +49,14 @@ public class Debugger : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.M))
         {
-            visibilityController.ToggleFibrousLigamentsVisibility();
+            //visibilityController.ToggleFibrousLigamentsVisibility();
+            controller.BreakJointsPress();
             controller.MountColumnMode();
         }
 
         if (Input.GetKeyDown(KeyCode.B))
         {
-            visibilityController.ToggleFibrousLigamentsVisibility();
+            //visibilityController.ToggleFibrousLigamentsVisibility();
             controller.BackToNormalMode();
         }
     }

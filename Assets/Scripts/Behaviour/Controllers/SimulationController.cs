@@ -26,7 +26,6 @@ namespace TFG.Behaviour.Controllers
             if (areJointsActivated)
             {
                 areJointsActivated = false;
-                Debug.Log("Lanzo evento de ruptura");
                 OnBreak();
             }
         }
