@@ -19,6 +19,8 @@ namespace TFG.Behaviour.Column
 
 
         private bool isMoving;
+        private bool exploited;
+
         private Vector3 playerPosition;
 
         private void Start()
@@ -51,11 +53,44 @@ namespace TFG.Behaviour.Column
                     transform.rotation,
                     finalRotation,
                     rotationalSpeed * Time.deltaTime);
+
+                return;
             }
 
             if(transform.position == finalPosition)
             {
                 isMoving = false;
+                exploited = true;
+            }
+
+            if (!isMoving && exploited)
+            {
+                if(GetComponent<CartilaginousJoint>())
+                {
+                    var jointComponent = GetComponent<JointComponent>();
+
+                    float actualDistance = Vector3.Distance(transform.position, jointComponent.prev.transform.position);
+                    float initialDistance = jointComponent.initialDistancePrev;
+
+                    if (actualDistance <= initialDistance)
+                    {
+                        GetComponent<CartilaginousJoint>().RestoreLinksPrev();
+                    }
+
+                    actualDistance = Vector3.Distance(transform.position, jointComponent.next.transform.position);
+                    initialDistance = jointComponent.initialDistanceNext;
+
+                    if (name.Equals("Intervertebral disc T9-T10"))
+                    {
+                        Debug.Log(actualDistance.ToString("f4"));
+                        Debug.Log(initialDistance.ToString("f4"));
+                    }
+
+                    if (actualDistance <= initialDistance)
+                    {
+                        GetComponent<CartilaginousJoint>().RestoreLinksNext();
+                    }
+                }
             }
         }
     }

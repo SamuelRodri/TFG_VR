@@ -22,7 +22,6 @@ namespace TFG.UI
 
         public void EnableTriggerEnter()
         {
-            Debug.Log("hola");
             triggerEnter = true;
         }
 

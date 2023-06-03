@@ -101,6 +101,8 @@ namespace TFG.Behaviour.Column
         {
             if (prevJoint)
             {
+                GetComponent<JointComponent>().prevJointActivated = false;
+                GetComponent<JointComponent>().prev.nextJointActivated = false;
                 prevJoint.xMotion = ConfigurableJointMotion.Free;
                 prevJoint.yMotion = ConfigurableJointMotion.Free;
                 prevJoint.zMotion = ConfigurableJointMotion.Free;
@@ -108,10 +110,30 @@ namespace TFG.Behaviour.Column
 
             if (nextJoint)
             {
+                GetComponent<JointComponent>().nextJointActivated = false;
+                GetComponent<JointComponent>().next.prevJointActivated = false;
                 nextJoint.xMotion = ConfigurableJointMotion.Free;
                 nextJoint.yMotion = ConfigurableJointMotion.Free;
                 nextJoint.zMotion = ConfigurableJointMotion.Free;
             }
+        }
+
+        public void RestoreLinksPrev()
+        {
+            GetComponent<JointComponent>().prevJointActivated = true;
+            GetComponent<JointComponent>().prev.nextJointActivated = true;
+            prevJoint.xMotion = ConfigurableJointMotion.Locked;
+            prevJoint.yMotion = ConfigurableJointMotion.Limited;
+            prevJoint.zMotion = ConfigurableJointMotion.Locked;
+        }
+
+        public void RestoreLinksNext()
+        {
+            GetComponent<JointComponent>().nextJointActivated = true;
+            GetComponent<JointComponent>().next.prevJointActivated = true;
+            nextJoint.xMotion = ConfigurableJointMotion.Locked;
+            nextJoint.yMotion = ConfigurableJointMotion.Limited;
+            nextJoint.zMotion = ConfigurableJointMotion.Locked;
         }
     }
 }

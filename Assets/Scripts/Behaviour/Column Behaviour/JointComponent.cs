@@ -21,6 +21,11 @@ namespace TFG.Behaviour.Column
         private Vector3 initialPosition;
         private Quaternion initialRotation;
 
+        public float initialDistancePrev;
+        public float initialDistanceNext;
+
+        public bool prevJointActivated;
+        public bool nextJointActivated;
         public bool areFlexible;
 
         private void Awake()
@@ -36,14 +41,17 @@ namespace TFG.Behaviour.Column
         {
             SimulationController.OnRestore += ResetTransform;
         }
+
         public void SetPrev(JointComponent p)
         {
             prev = p;
+            initialDistancePrev = Vector3.Distance(transform.position, prev.transform.position);
         }
 
         public void SetNext(JointComponent n)
         {
             next = n;
+            initialDistanceNext = Vector3.Distance(transform.position, next.transform.position);
         }
 
         public bool HasPrev() { return prev != null; }
@@ -72,15 +80,15 @@ namespace TFG.Behaviour.Column
             //}
             else
             {
-                if (SimulationController.areJointsActivated || areFlexible)
+                if (SimulationController.areJointsActivated || prevJointActivated || nextJointActivated)
                 {
                     #region Rotation
                     Quaternion prevRot = transform.rotation;
                     Quaternion nextRot = transform.rotation;
 
                     
-                    if (HasPrev()) { prevRot = FollowComponentRotation(prev); }
-                    if (HasNext()) { nextRot = FollowComponentRotation(next); }
+                    if (HasPrev() && prevJointActivated) { prevRot = FollowComponentRotation(prev); }
+                    if (HasNext() && nextJointActivated) { nextRot = FollowComponentRotation(next); }
                     
                     rotation = Quaternion.Slerp(prevRot, nextRot, 0.5f).eulerAngles;
 

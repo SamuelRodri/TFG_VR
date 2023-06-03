@@ -58,7 +58,7 @@ namespace TFG.Behaviour.VR
 
             if (!SimulationController.areJointsActivated)
             {
-                //GetComponent<InfoBoardEntity>().SetBoardActive();
+                GetComponent<InfoBoardEntity>().SetBoardActive();
             }
 
             base.OnSelectEntering(args);
@@ -66,7 +66,7 @@ namespace TFG.Behaviour.VR
 
         protected override void OnSelectExited(SelectExitEventArgs args)
         {
-            //GetComponent<InfoBoardEntity>().SetBoardInactive();
+            GetComponent<InfoBoardEntity>().SetBoardInactive();
             isGrabbed = false;
             base.OnSelectExited(args);
         }

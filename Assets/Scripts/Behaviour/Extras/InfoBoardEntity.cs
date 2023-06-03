@@ -13,9 +13,9 @@ namespace TFG.Behaviour.Extras
         // Start is called before the first frame update
         void Start()
         {
-            //board = transform.GetChild(0).gameObject;
-            //information = board.transform.GetChild(0).transform.GetChild(0).GetComponent<TMP_Text>();
-            //information.text = name;
+            board = transform.GetChild(0).gameObject;
+            information = board.transform.GetChild(0).transform.GetChild(0).GetComponent<TMP_Text>();
+            information.text = name;
         }
 
         public void SetBoardActive()
