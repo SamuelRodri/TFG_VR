@@ -21,6 +21,8 @@ namespace TFG.Behaviour.Column
         private Vector3 initialPosition;
         private Quaternion initialRotation;
 
+        public bool areFlexible;
+
         private void Awake()
         {
             initialPosition = transform.position;
@@ -70,7 +72,7 @@ namespace TFG.Behaviour.Column
             //}
             else
             {
-                if (SimulationController.areJointsActivated)
+                if (SimulationController.areJointsActivated || areFlexible)
                 {
                     #region Rotation
                     Quaternion prevRot = transform.rotation;

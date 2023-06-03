@@ -10,7 +10,7 @@ namespace TFG.Behaviour.BodyLayers
         // Start is called before the first frame update
         void Start()
         {
-            BodyVisibilityController.ToggleLigaments += Toggle;
+            BodyVisibilityController.ToggleAllLigaments += Toggle;
         }
 
         private void Toggle()

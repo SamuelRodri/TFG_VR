@@ -9,7 +9,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 namespace TFG.Behaviour.VR
 {
-    [RequireComponent(typeof(InfoBoardEntity))]
     public class XROffsetGrabInteractable : XRGrabInteractable
     {
         private Vector3 initialAttachLocalPos;
@@ -42,7 +41,6 @@ namespace TFG.Behaviour.VR
         protected override void OnSelectEntering(SelectEnterEventArgs args)
         {
             interactor = args.interactorObject;
-            
             isGrabbed = true;
             if (interactor is XRDirectInteractor)
             {
@@ -60,7 +58,7 @@ namespace TFG.Behaviour.VR
 
             if (!SimulationController.areJointsActivated)
             {
-                GetComponent<InfoBoardEntity>().SetBoardActive();
+                //GetComponent<InfoBoardEntity>().SetBoardActive();
             }
 
             base.OnSelectEntering(args);
@@ -68,7 +66,7 @@ namespace TFG.Behaviour.VR
 
         protected override void OnSelectExited(SelectExitEventArgs args)
         {
-            GetComponent<InfoBoardEntity>().SetBoardInactive();
+            //GetComponent<InfoBoardEntity>().SetBoardInactive();
             isGrabbed = false;
             base.OnSelectExited(args);
         }

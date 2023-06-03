@@ -17,10 +17,13 @@ namespace TFG.Behaviour.Column
         {
             initialPosition = transform.position;
             initialRotation = transform.rotation;
-            parentVertebra = transform.parent.gameObject;
+            parentLigament = transform.parent.gameObject;
             SimulationController.OnBreak += ChangeParent;
             SimulationController.OnRestore += ChangeParent;
             SimulationController.OnRestore += ResetTransform;
+
+            // Go to parent vertebra
+            ChangeParent();
         }
 
         public void ResetTransform()

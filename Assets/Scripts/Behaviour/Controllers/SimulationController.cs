@@ -13,6 +13,12 @@ namespace TFG.Behaviour.Controllers
         public delegate void RestoreJoints();
         public static event RestoreJoints OnRestore;
 
+        public delegate void MountMode();
+        public static event MountMode OnMountMode;
+
+        public delegate void NormalMode();
+        public static event NormalMode OnNormalMode;
+
         public static bool areJointsActivated = true;
 
         public void BreakJointsPress()
@@ -20,6 +26,7 @@ namespace TFG.Behaviour.Controllers
             if (areJointsActivated)
             {
                 areJointsActivated = false;
+                Debug.Log("Lanzo evento de ruptura");
                 OnBreak();
             }
         }
@@ -40,6 +47,16 @@ namespace TFG.Behaviour.Controllers
                 areJointsActivated = true;
                 OnRestore();
             }
+        }
+
+        public void MountColumnMode()
+        {
+            OnMountMode();
+        }
+
+        public void BackToNormalMode()
+        {
+            OnNormalMode();
         }
     }
 }

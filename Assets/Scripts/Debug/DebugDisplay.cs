@@ -43,28 +43,21 @@ namespace TFG.DebugManagement
 
         void HandleLog(string logString, string stackTrace, LogType type)
         {
-            if (type == LogType.Log)
+            if (type == LogType.Error || type == LogType.Exception)
             {
-                string[] splitString = logString.Split(char.Parse(":"));
-                string debugKey = splitString[0];
-                string debugValue = splitString.Length > 1 ? splitString[1] : "";
+                // Obtener el nombre del script y la línea del stack trace
+                string[] stackTraceLines = stackTrace.Split('\n');
+                string scriptInfo = stackTraceLines[1]; // La segunda línea contiene la información del script
+                string[] scriptInfoParts = scriptInfo.Split(':');
+                string scriptName = scriptInfoParts[0].Trim();
+                //int lineNumber = int.Parse(scriptInfoParts[1]);
 
-                if (debugLogs.ContainsKey(debugKey))
-                    debugLogs[debugKey] = debugValue;
-                else
-                    debugLogs.Add(debugKey, debugValue);
+                // Construir el mensaje de error con el nombre del script y la línea
+                //string errorMessage = string.Format("Error en {0}, línea {1}: {2}", scriptName, lineNumber, logString);
+
+                // Agregar el mensaje de error al componente de texto
+                //display.text += errorMessage + "\n";
             }
-
-            string displayText = "";
-            foreach (KeyValuePair<string, string> log in debugLogs)
-            {
-                if (log.Value == "")
-                    displayText += log.Key + "\n";
-                else
-                    displayText += log.Key + ": " + log.Value + "\n";
-            }
-
-            display.text = displayText;
         }
     }
 }

@@ -20,7 +20,8 @@ namespace TFG.Behaviour.Controllers
         public delegate void Toggle();
 
         public static event Toggle ToggleSkeleton;
-        public static event Toggle ToggleLigaments;
+        public static event Toggle ToggleAllLigaments;
+        public static event Toggle ToggleFibrousLigaments;
 
         public void ToggleSkeletonVisibility()
         {
@@ -29,7 +30,12 @@ namespace TFG.Behaviour.Controllers
 
         public void ToggleLigamentsVisibility()
         {
-            ToggleLigaments();
+            ToggleAllLigaments();
+        }
+
+        public void ToggleFibrousLigamentsVisibility()
+        {
+            ToggleFibrousLigaments();
         }
 
         public void ToggleNervsVisibility()

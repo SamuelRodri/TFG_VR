@@ -46,5 +46,17 @@ public class Debugger : MonoBehaviour
         {
             controller.RestoreColumn();
         }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            visibilityController.ToggleFibrousLigamentsVisibility();
+            controller.MountColumnMode();
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            visibilityController.ToggleFibrousLigamentsVisibility();
+            controller.BackToNormalMode();
+        }
     }
 }

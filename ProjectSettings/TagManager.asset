@@ -10,6 +10,7 @@ TagManager:
   - Nerv
   - CardioVascular
   - Index
+  - FlexibleLigament
   layers:
   - Default
   - TransparentFX
