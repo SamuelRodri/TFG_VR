@@ -52,6 +52,11 @@ namespace TFG.Behaviour.Column
                     finalRotation,
                     rotationalSpeed * Time.deltaTime);
             }
+
+            if(transform.position == finalPosition)
+            {
+                isMoving = false;
+            }
         }
     }
 }
