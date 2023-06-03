@@ -50,6 +50,7 @@ namespace TFG.Behaviour.Controllers
 
         public void MountColumnMode()
         {
+            BreakJointsPress();
             OnMountMode();
         }
 

@@ -50,13 +50,13 @@ namespace TFG.DebugManagement
                 string scriptInfo = stackTraceLines[1]; // La segunda línea contiene la información del script
                 string[] scriptInfoParts = scriptInfo.Split(':');
                 string scriptName = scriptInfoParts[0].Trim();
-                //int lineNumber = int.Parse(scriptInfoParts[1]);
+                int lineNumber = int.Parse(scriptInfoParts[1]);
 
                 // Construir el mensaje de error con el nombre del script y la línea
-                //string errorMessage = string.Format("Error en {0}, línea {1}: {2}", scriptName, lineNumber, logString);
+                string errorMessage = string.Format("Error en {0}, línea {1}: {2}", scriptName, lineNumber, logString);
 
                 // Agregar el mensaje de error al componente de texto
-                //display.text += errorMessage + "\n";
+                display.text += errorMessage + "\n";
             }
         }
     }
