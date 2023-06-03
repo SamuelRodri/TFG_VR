@@ -87,8 +87,8 @@ namespace TFG.Behaviour.Column
                     Quaternion nextRot = transform.rotation;
 
                     
-                    if (HasPrev() && prevJointActivated) { prevRot = FollowComponentRotation(prev); }
-                    if (HasNext() && nextJointActivated) { nextRot = FollowComponentRotation(next); }
+                    if (HasPrev() && (prevJointActivated || SimulationController.areJointsActivated)) { prevRot = FollowComponentRotation(prev); }
+                    if (HasNext() && (nextJointActivated || SimulationController.areJointsActivated)) { nextRot = FollowComponentRotation(next); }
                     
                     rotation = Quaternion.Slerp(prevRot, nextRot, 0.5f).eulerAngles;
 
