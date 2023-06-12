@@ -26,7 +26,7 @@ namespace TFG.Behaviour.Column
         private void Start()
         {
             SimulationController.OnMountMode += GetRandomPosition;
-
+            SimulationController.OnNormalMode += StopMoving;
             playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
         }
 
@@ -86,6 +86,11 @@ namespace TFG.Behaviour.Column
                     }
                 }
             }
+        }
+
+        private void StopMoving()
+        {
+            isMoving = false;
         }
     }
 }

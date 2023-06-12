@@ -45,6 +45,7 @@ namespace TFG.Behaviour.Controllers
                 Debug.Log("Restaura");
                 areJointsActivated = true;
                 OnRestore();
+                OnNormalMode();
             }
         }
 
