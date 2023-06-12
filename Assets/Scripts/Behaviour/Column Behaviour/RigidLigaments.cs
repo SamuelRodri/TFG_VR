@@ -10,7 +10,7 @@ namespace TFG.Behaviour.Column
         // Start is called before the first frame update
         void Start()
         {
-            SimulationController.OnBreak += Hide;
+            SimulationController.OnMountMode += Hide;
             SimulationController.OnRestore += Show;
         }
 

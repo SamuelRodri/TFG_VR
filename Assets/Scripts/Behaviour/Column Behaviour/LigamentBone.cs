@@ -33,7 +33,7 @@ namespace TFG.Behaviour.Column
 
         private void ChangeParent()
         {
-            if (transform.parent.name == parentVertebra.name)
+            if (transform.parent.name == parentVertebra.name && !SimulationController.areJointsActivated)
             {
                 transform.parent = parentLigament.transform;
             }
