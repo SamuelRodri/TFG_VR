@@ -30,7 +30,7 @@ namespace TFG.Behaviour.Hand
         public void SetAnimFloats(float gripValue, float triggerValue)
         {
             Phalanx[] phalanxs = GetComponentsInChildren<Phalanx>();
-
+            
             foreach (Phalanx p in phalanxs)
             {
                 p.SetAnimFloats(gripValue, triggerValue);

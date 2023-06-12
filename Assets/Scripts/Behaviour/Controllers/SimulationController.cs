@@ -42,7 +42,7 @@ namespace TFG.Behaviour.Controllers
                 {
                     component.GetComponent<CartilaginousJoint>().RestoreLinks();
                 }
-
+                Debug.Log("Restaura");
                 areJointsActivated = true;
                 OnRestore();
             }

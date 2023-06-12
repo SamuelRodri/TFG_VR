@@ -80,12 +80,6 @@ namespace TFG.Behaviour.Column
                     actualDistance = Vector3.Distance(transform.position, jointComponent.next.transform.position);
                     initialDistance = jointComponent.initialDistanceNext;
 
-                    if (name.Equals("Intervertebral disc T9-T10"))
-                    {
-                        Debug.Log(actualDistance.ToString("f4"));
-                        Debug.Log(initialDistance.ToString("f4"));
-                    }
-
                     if (actualDistance <= initialDistance)
                     {
                         GetComponent<CartilaginousJoint>().RestoreLinksNext();
