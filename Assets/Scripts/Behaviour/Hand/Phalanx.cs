@@ -17,9 +17,8 @@ namespace TFG.Behaviour.Hand
 
         public float actualGrip;
         public float actualTrigger;
-        private GameObject grabbedObject;
+        public GameObject grabbedObject;
 
-        [SerializeField] string parameterToStop;
         [SerializeField] string gripParemeter;
         [SerializeField] string triggerParemeter;
 

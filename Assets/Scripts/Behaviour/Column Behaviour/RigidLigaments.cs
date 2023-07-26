@@ -11,7 +11,10 @@ namespace TFG.Behaviour.Column
         void Start()
         {
             SimulationController.OnMountMode += Hide;
-            SimulationController.OnRestore += Show;
+            SimulationController.OnBreak += Show;
+            SimulationController.OnRestore += Hide;
+
+            Hide();
         }
 
         public void Show()

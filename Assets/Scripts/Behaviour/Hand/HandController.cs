@@ -29,13 +29,13 @@ namespace TFG.Behaviour.Hand
 
         private void Update()
         {
-            var leftHandedControllers = new List<UnityEngine.XR.InputDevice>();
+            var controllers = new List<UnityEngine.XR.InputDevice>();
             var desiredCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.HeldInHand |
                 (handType.Equals(HandType.left) ? UnityEngine.XR.InputDeviceCharacteristics.Left : UnityEngine.XR.InputDeviceCharacteristics.Right) |
                 UnityEngine.XR.InputDeviceCharacteristics.Controller;
-            UnityEngine.XR.InputDevices.GetDevicesWithCharacteristics(desiredCharacteristics, leftHandedControllers);
+            UnityEngine.XR.InputDevices.GetDevicesWithCharacteristics(desiredCharacteristics, controllers);
 
-            foreach (var device in leftHandedControllers)
+            foreach (var device in controllers)
             {
                 device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.grip, out _gripValue);
                 device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.trigger, out _triggerValue);

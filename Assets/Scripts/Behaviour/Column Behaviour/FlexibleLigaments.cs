@@ -12,29 +12,16 @@ namespace TFG.Behaviour.Column
         void Start()
         {
             SimulationController.OnMountMode += Hide;
-            SimulationController.OnNormalMode += Show;
-            BodyVisibilityController.ToggleFibrousLigaments += ToggleVisibility;
+            SimulationController.OnBreak += Hide;
+            SimulationController.OnRestore += Show;
         }
 
-        private void ToggleVisibility()
-        {
-            if (GetComponent<MeshRenderer>())
-            {
-                GetComponent<MeshRenderer>().enabled = !GetComponent<MeshRenderer>().enabled;
-            }
-            else if (GetComponent<SkinnedMeshRenderer>())
-            {
-                GetComponent<SkinnedMeshRenderer>().enabled = !GetComponent<SkinnedMeshRenderer>().enabled;
-            }
-            GetComponent<MeshCollider>().enabled = !GetComponent<MeshCollider>().enabled;
-        }
-
-        private void Show()
+        public void Show()
         {
             gameObject.SetActive(true);
         }
 
-        private void Hide()
+        public void Hide()
         {
             gameObject.SetActive(false);
         }
